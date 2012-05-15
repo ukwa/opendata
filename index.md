@@ -25,5 +25,5 @@ Further Information
 
 [@openplanets](@openplanets)
 
-Supported by...
+<a id="forkme_banner" href="https://github.com/openplanets/ukwa-opendata">View on GitHub</a>
 
