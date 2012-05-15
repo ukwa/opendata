@@ -8,16 +8,23 @@ In order to facilitate research, and so we might better understand and preserve 
 Datasets & APIs
 ---------------
 
+We hold the following datasets, from which we offer a number of secondary datasets and, where practical, API access.
+
 * [UK Web Domain Dataset (1996-2010)](ukweb1996to2010)
 * [UK Selective Web Archive](ukselective)
 
+### APIs ###
+
+We support a number of different APIs:
+
+* Wayback
+* Memento
+* Hosted Linked Open Data
+
+However, not all data sets are exposed over the same APIs. Check the dataset descriptions for details.
 
 Further Information
-===================
+-------------------
 
-[@anjackson](@anjackson)
-
-[@openplanets](@openplanets)
-
-<a id="forkme_banner" href="https://github.com/openplanets/ukwa-opendata">View on GitHub</a>
+Contact us via [web-archivist@bl.uk](mailto:web-archivist@bl.uk).
 
