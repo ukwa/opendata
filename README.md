@@ -1,4 +1,4 @@
-ukwa-opendata
-=============
+UK Web Archive Open Data
+========================
 
-Repository for web pages on our Open Data efforts.
+See http://openplanets.github.com/ukwa-opendata
