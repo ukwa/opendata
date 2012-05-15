@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JISC UK Web Domain Dataset (1996-2010)
+title: UK Web Domain Dataset (1996-2010)
 ---
 
 http://www.archive.org/
