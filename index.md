@@ -21,9 +21,9 @@ APIs
 Further Information
 ===================
 
-[@anjackson]
+[@anjackson](@anjackson)
 
-[@openplanets]
+[@openplanets](@openplanets)
 
 Supported by...
 
