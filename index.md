@@ -15,15 +15,35 @@ We hold the following datasets, from which we offer a number of secondary datase
 * [UK Web Domain Dataset (1996-2010)](ukweb1996to2010)
 * [UK Selective Web Archive](ukselective)
 
+### Open Datasets ###
+
+In general, we can't provide remote bulk access to the primary datasets listed above (although bulk access can be arranged for particular projects - see below). This is mainly because the conditions underwhich we hold the content do not permit it, but also because the data sets are very large and so providing bulk downloads is not practical.
+
+However, secondary datasets, composed of metadata that describes simple facts about the content, can be made available under open terms. We currently offer two types of dataset.
+
+* [Geoindex Data](geoindex)
+* [Format Profile Data](fmtprofile)
+
 ### APIs ###
 
-We support a number of different APIs:
+We support a number of different APIs, although not all data sets are exposed over the same APIs. Check the dataset descriptions for details.
 
-* Wayback
-* Memento
-* Hosted Linked Open Data
+* [Wayback](wayback)
+* [Memento](memento)
+* Hosted Linked Open Data (TBC)
 
-However, not all data sets are exposed over the same APIs. Check the dataset descriptions for details.
+
+Projects
+--------
+
+We are working with the following projects to exploit these datasets:
+
+* [Analytical Access to the Domain Dark Archive](http://domaindarkarchive.blogspot.co.uk/)
+* [Big Data: Demonstrating the Value of the UK Web Domain Dataset for Social Science Research](http://www.oii.ox.ac.uk/research/projects/?id=88)
+* [SCAPE: Scaleable Preservation Environments](http://www.scape-project.eu)
+
+If you would like to work on this dataset directly, or have exploited the data in the secondary datasets, please get in touch with us at [this address](mailto:web-archivist@bl.uk).
+
 
 Further Information
 -------------------
