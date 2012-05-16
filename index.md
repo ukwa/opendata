@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Welcome to UKWA Open Data
+title: Welcome
 ---
+
+Welcome to the UK Web Archive Open Data service.
 
 In order to facilitate research, and so we might better understand and preserve the UK's web history, we make a number of data and API services available for general use.
 
