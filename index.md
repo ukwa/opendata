@@ -10,10 +10,10 @@ Datasets, Tools & APIs
 
 We hold the following datasets, from which we offer a number of secondary datasets and, where practical, API access.
 
-*[UK Web Domain Dataset (1996-2010)](ukweb1996to2010)
-  *[UK Web Domain Dataset (1996-2010) Format Profile](ukweb1996to2010/fmtprofile)
-  *[UK Web Domain Dataset (1996-2010) Geoindex](ukweb1996to2010/geoindex)
-*[UK Selective Web Archive](ukselective)
+* [UK Web Domain Dataset (1996-2010)](ukweb1996to2010)
+  * [UK Web Domain Dataset (1996-2010) Format Profile](ukweb1996to2010/fmtprofile)
+  * [UK Web Domain Dataset (1996-2010) Geoindex](ukweb1996to2010/geoindex)
+* [UK Selective Web Archive](ukselective)
 
 ### Open Datasets ###
 
@@ -21,10 +21,12 @@ In general, we can't provide remote bulk access to the primary datasets listed a
 
 However, secondary datasets, composed of metadata that describes simple facts about the content, can be made available under open terms. We currently offer two types of dataset.
 
-*Geoindex Data
-  *Postcodes referenced by UK web pages, over time (data of crawl).
-*Format Profile Data
-  *Number of resources of particular MIME types, by year. Also compares the server MIME type with that determined by format identification tools.
+* Geoindex Data
+
+  * Postcodes referenced by UK web pages, over time (data of crawl).
+* Format Profile Data
+
+  * Number of resources of particular MIME types, by year. Also compares the server MIME type with that determined by format identification tools.
 
 For all the details, see the README files and code in [the GitHub repository](http://github.com/ukwa/opendata/).
 
