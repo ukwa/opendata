@@ -21,7 +21,7 @@ The 'cleaned' version is a concatenation of all the results for each batch of th
 Citing this dataset
 -------------------
 
-If you wish to cite this dataset, please use DOI: 10.5259/ukwa.ds.2.fmt/1
+If you wish to cite this dataset, please use DOI: 10.5259/ukwa.ds.2/fmt/1
 
 
 License
@@ -32,7 +32,6 @@ License
      href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
   </a>
-  <br />
   To the extent possible under law,
   <a rel="dct:publisher"
      href="http://www.webarchive.org.uk/">

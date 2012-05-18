@@ -15,7 +15,7 @@ Total of 72072921385 bytes, 61 GB.
 Citing this dataset
 -------------------
 
-If you do wish to cire this dataset, please use DOI: 10.5259/ukwa.ds.2.geo/1
+If you do wish to cire this dataset, please use DOI: 10.5259/ukwa.ds.2/geo/1
 
 
 License
@@ -26,7 +26,6 @@ License
      href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
   </a>
-  <br />
   To the extent possible under law,
   <a rel="dct:publisher"
      href="http://www.webarchive.org.uk/">
