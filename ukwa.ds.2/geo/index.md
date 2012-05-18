@@ -11,6 +11,8 @@ Total of 72072921385 bytes, 61 GB.
 
 Generated from the [UK Dark Domain Archive (1996-2010)](..) dataset.
 
+Details about the data format and how to use it, [here](https://github.com/ukwa/opendata/tree/master/datasets/ukwa.ds.2/geo).
+
 Citing this dataset
 -------------------
 
