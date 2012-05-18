@@ -27,7 +27,7 @@ Secondary Datasets
 Supported by
 ------------
 
-[<img src="../images/jisc-logo-sml.png"/>](http://www.jisc.ac.uk/)
+[<img src="/opendata/images/jisc-logo-sml.png"/>](http://www.jisc.ac.uk/)
 
 
 
