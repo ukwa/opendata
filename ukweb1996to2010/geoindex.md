@@ -22,7 +22,7 @@ DOI: 10.5259/ukwa.ds.2.geo/1
      href="http://www.webarchive.org.uk/">
     <span property="dct:title">The UK Web Archive</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">The UK Web Domain Dataset (1996-2010) Format Profile</span>.
+  <span property="dct:title">The UK Web Domain Dataset (1996-2010) Geoindex</span>.
 </p>
 
 
