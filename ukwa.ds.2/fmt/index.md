@@ -11,7 +11,7 @@ application/x-csv	text/plain	application/octet-stream	2009	1
 </pre>
 means that, of all the resources crawled in 2009, there was one item that the server declared to be CSV, but which Tika determined to be plain text, and which DROID could not identify at all.
 
-Generated from the [UK Dark Domain Archive (1996-2010)[/opendata/ukweb1996to2010] dataset.
+Generated from the [UK Dark Domain Archive [1996-2010](/opendata/ukweb1996to2010) dataset.
 
 ### Download ###
 This dataset is hosted in this GitHub repository. You can download it from [here](https://github.com/ukwa/opendata/tree/master/fmtprofile/datasets/ukweb1996to2010)
@@ -28,7 +28,7 @@ License
 -------
 
 <p xmlns:dct="http://purl.org/dc/terms/">
-  <a rel="license"
+  <a rel="license" style="float:right" 
      href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
   </a>

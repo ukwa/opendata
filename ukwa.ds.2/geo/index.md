@@ -3,7 +3,7 @@ layout: default
 title: UK Domain Dark Archive (1996-2010) Geoindex
 ---
 
-Generated from the [UK Dark Domain Archive (1996-2010)[/] dataset.
+Generated from the [UK Dark Domain Archive (1996-2010)](/) dataset.
 
 700,641,549 lines of TSV, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode.
 
@@ -22,7 +22,7 @@ License
 -------
 
 <p xmlns:dct="http://purl.org/dc/terms/">
-  <a rel="license"
+  <a rel="license" style="float:right"
      href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
   </a>
