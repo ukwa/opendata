@@ -20,8 +20,8 @@ Average 71 MB, but very variable.
 Secondary Datasets
 ------------------
 
-* [UK Domain Dark Archive (1996-2010) Format Profile](fmtprofile)
-* [UK Domain Dark Archive (1996-2010) Geoindex](geoindex)
+* [UK Domain Dark Archive (1996-2010) Format Profile](fmtprofile.html)
+* [UK Domain Dark Archive (1996-2010) Geoindex](geoindex.html)
 
 Supported by
 ------------
