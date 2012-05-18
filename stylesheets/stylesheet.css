@@ -130,6 +130,10 @@ a {
   text-shadow: #0090ff 0px 0px 2px;
 }
 
+#page_title a {
+  color: white;
+}
+
 footer a:hover {
   color: #43adff;
   text-shadow: #0090ff 0px 0px 2px;
