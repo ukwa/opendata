@@ -17,19 +17,11 @@ Total size: 32TB
 Average 71 MB, but very variable.
 
 
-
 Secondary Datasets
 ------------------
 
-### UK Domain Dark Archive Format Profile ###
-
-TODO Describe the dataset and its terms.
-
-
-### UK Domain Dark Archive Geoindex ###
-
-TODO Describe the dataset and its terms.
-
+* [UK Domain Dark Archive (1996-2010) Format Profile](fmtprofile)
+* [UK Domain Dark Archive (1996-2010) Geoindex](geoindex)
 
 Supported by
 ------------

@@ -19,8 +19,12 @@ In general, we can't provide remote bulk access to the primary datasets listed a
 
 However, secondary datasets, composed of metadata that describes simple facts about the content, can be made available under open terms. We currently offer two types of dataset.
 
-* [Geoindex Data](geoindex)
-* [Format Profile Data](fmtprofile)
+* Geoindex Data
+** Postcodes referenced by UK web pages, over time (data of crawl).
+* Format Profile Data
+** Number of resources of particular MIME types, by year. Also compares the server MIME type with that determined by format identification tools.
+
+For all the details, see the README files and code in [the GitHub repository)[http://github.com/ukwa/opendata/].
 
 ### Tools ###
 
