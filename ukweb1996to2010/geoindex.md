@@ -9,3 +9,5 @@ Total of 72072921385 bytes, 61 GB.
 
 700,641,549 lines of TSV, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode.
 
+DOI: 10.5259/ukwa.ds.2.geo/1
+

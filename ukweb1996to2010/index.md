@@ -16,12 +16,13 @@ Total size: 32TB
 
 Average 71 MB, but very variable.
 
+DOI: 10.5259/ukwa.ds.2/1
 
 Secondary Datasets
 ------------------
 
-* [UK Domain Dark Archive (1996-2010) Format Profile](fmtprofile.html)
-* [UK Domain Dark Archive (1996-2010) Geoindex](geoindex.html)
+* [UK Domain Dark Archive (1996-2010) Format Profile](fmtprofile)
+* [UK Domain Dark Archive (1996-2010) Geoindex](geoindex)
 
 Supported by
 ------------

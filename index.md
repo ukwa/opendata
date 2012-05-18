@@ -11,8 +11,8 @@ Datasets, Tools & APIs
 We hold the following datasets, from which we offer a number of secondary datasets and, where practical, API access.
 
 * [UK Web Domain Dataset (1996-2010)](ukweb1996to2010)
-  * [UK Web Domain Dataset (1996-2010) Format Profile](ukweb1996to2010/fmtprofile.html)
-  * [UK Web Domain Dataset (1996-2010) Geoindex](ukweb1996to2010/geoindex.html)
+  * [UK Web Domain Dataset (1996-2010) Format Profile](ukweb1996to2010/fmtprofile)
+  * [UK Web Domain Dataset (1996-2010) Geoindex](ukweb1996to2010/geoindex)
 * [UK Selective Web Archive](ukselective)
 
 ### Open Datasets ###
