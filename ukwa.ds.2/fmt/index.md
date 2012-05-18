@@ -5,7 +5,7 @@ title: UK Domain Dark Archive (1996-2010) Format Profile
 
 This dataset is a format profile, summarising the data formats (MIME types) contained within all of the HTTP 200 OK responses in the [UK Dark Domain Archive (1996-2010)](..) dataset.
 
-This dataset is hosted in this GitHub repository. You can download it from [here](https://github.com/ukwa/opendata/tree/master/datasets/ukwa.ds.2/fmt), where you'll also find a full description of the data.
+This dataset is hosted in this GitHub repository. You can download it from [here](https://github.com/ukwa/opendata/tree/master/datasets/ukwa.ds.2/fmt), where you'll also find [a full description of the data](https://github.com/ukwa/opendata/tree/master/datasets/ukwa.ds.2/fmt#uk-domain-dark-archive-1996-2010-format-profile).
 
 Citing this dataset
 -------------------
