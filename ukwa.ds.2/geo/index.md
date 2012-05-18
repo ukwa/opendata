@@ -3,14 +3,13 @@ layout: default
 title: UK Domain Dark Archive (1996-2010) Geoindex
 ---
 
-Generated from the [UK Dark Domain Archive (1996-2010)](/) dataset.
-
 700,641,549 lines of TSV, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode.
 
 11GB compressed data.
 
 Total of 72072921385 bytes, 61 GB.
 
+Generated from the [UK Dark Domain Archive (1996-2010)](..) dataset.
 
 Citing this dataset
 -------------------
