@@ -3,13 +3,21 @@ layout: default
 title: UK Domain Dark Archive (1996-2010) Geoindex
 ---
 
+700,641,549 lines of TSV, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode.
+
 11GB compressed data.
 
 Total of 72072921385 bytes, 61 GB.
 
-700,641,549 lines of TSV, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode.
 
-DOI: 10.5259/ukwa.ds.2.geo/1
+Citing this dataset
+-------------------
+
+If you do wish to cire this dataset, please use DOI: 10.5259/ukwa.ds.2.geo/1
+
+
+License
+-------
 
 <p xmlns:dct="http://purl.org/dc/terms/">
   <a rel="license"
