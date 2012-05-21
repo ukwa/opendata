@@ -10,7 +10,7 @@ This dataset is hosted in this GitHub repository. You can download it from [here
 Citing this dataset
 -------------------
 
-If you wish to cite this dataset, please use DOI: 10.5259/ukwa.ds.2/fmt/1
+If you wish to cite this dataset, please use DOI: [10.5259/ukwa.ds.2/fmt/1](http://dx.doi.org/10.5259/ukwa.ds.2/fmt/1)
 
 
 License
