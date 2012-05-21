@@ -27,19 +27,19 @@ To help us cope in those cases where a suitable PRONOM record does not yet exist
 At the most basic, many formats have some 'software' field that we can map to a 'software=XXX' parameter. Notably, PDF documents both the 'Producer' (e.g. Adobe Distiller X) and the 'Creator' meaning the creating application of the source document (e.g. Open Office or Microsoft Word). In other cases, this kind of information is stored in comment fields, like 'Text TextEntry: keyword=Software, value=ImageMagick, encoding=ISO-8859-1, compression=none' in the case of PNG.
 
 It may be possible to collect and normalise these formulations, but for now, we seek to simply document the conflict. Thus, for a particular PDF, we may have an extended MIME Type like this:
-<code>
+<pre>
 	application/pdf; version=1.4"; creator=Writer; producer="OpenOffice.org 3.2"
-</code>
+</pre>
 whereas for a ODF document, we have forms like this:
-<code>
+<pre>
 	application/vnd.oasis.opendocument.text; software="OpenOffice.org/3.2$Win32 OpenOffice.org_project/320m12$Build-9483"
-</code>
+</pre>
 
 Although this is rather clumsy, collecting this initial data will help us find a way forward. Finding new mappings, like whether 'pdf:producer' can be mapped to 'software', can be explored using this data and decided upon later.
 
 Tools
 -----
-Some example scripts for processing this data can be found [here](../../../fmtprofile)
+Some example scripts for processing this data can be found [here](../../fmtprofile)
 
 License
 -------
@@ -48,6 +48,7 @@ License
      href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
   </a>
+  <br />
   To the extent possible under law,
   <a rel="dct:publisher"
      href="http://www.webarchive.org.uk/">
