@@ -32,14 +32,14 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-{% capture url_parts %} {{ page.url | remove: "/opendata" | replace:'/'," " }}{% endcapture %}
+{% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
 {% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
 {% assign previous="" %}
 <ul>
  {% if num_parts == "0" or num_parts == "-1" %}
   <li><a href="/">home</a> &nbsp; </li>
  {% else %}
-  <li><a href="/">home</a> &#187; </li>
+  <li><a href="/">home</a> &#187; {{ num_parts }}</li>
 
   {% for unused in breadcrumb_list limit:num_parts %}
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
