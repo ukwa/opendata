@@ -47,10 +47,9 @@ for row in tsv_file:
     # ---
     # 
     
-    #fmt = bestType(fmtS,fmtT,fmtD)
+    fmt = bestType(fmtS,fmtT,fmtD)
     #fmt = reduceType(fmt,True)
-    
-    #fmt = reduceType(fmt,False)
+    fmt = reduceType(fmt,False)
     #fmt = "X"
     
     # Aggregate stats:
@@ -85,8 +84,8 @@ for fmt in sorted(byy):
         
         # Output the values:
         if byy[fmt].has_key(year):
-            #out = "{}\t{}".format(out, 100.0*byy[fmt][year]/tot[year])
-            out = "{}\t{}".format(out, byy[fmt][year])
+            out = "{}\t{}".format(out, 100.0*byy[fmt][year]/tot[year])
+            #out = "{}\t{}".format(out, byy[fmt][year])
             total += byy[fmt][year]
             # Count total formats:
             if byy[fmt][year] > 100:
