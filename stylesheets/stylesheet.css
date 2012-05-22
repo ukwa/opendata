@@ -373,6 +373,14 @@ Full-Width Styles
   padding-top: 40px;
 }
 
+#breadcrumb {
+  margin: 0;
+}
+#breadcrumb {
+  list-style: none;
+  float; left;
+}
+
 #footer_wrap {
   background: #212121;
 }

@@ -7,7 +7,7 @@ The ~2.5 billion 200 OK responses in the [UK Dark Domain Archive (1996-2010)](..
 
 The geoindex is composed of some 700,641,549 lines of TSV data, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode. Uncompressed, this is a total of 61 GB of text, and so care should be taken before downloading or attempting to use this data set.
 
-The data is not hosted on GitHub, as it is far too large. It can be downloaded from [here](http://www.webarchive.org.uk/datasets/ukwa.ds.2/geo/) in a compressed format (total download size, about 11GB).
+The data is not hosted on GitHub, as it is far too large. It can be downloaded from [here](http://www.webarchive.org.uk/datasets/ukwa.ds.2/geo/) in a compressed format (total download size, about 8GB).
 
 
 Citing this dataset
