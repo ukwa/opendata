@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+
+# Python derivatives
+*.pyc
+
+# OS X Metadata
+.DS_Store
