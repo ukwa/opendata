@@ -374,11 +374,15 @@ Full-Width Styles
 }
 
 #breadcrumb {
+  list-style: none;
+  display: inline;
   margin: 0;
+  padding: 0;
 }
 #breadcrumb {
-  list-style: none;
-  float; left;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 #footer_wrap {
