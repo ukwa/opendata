@@ -3,7 +3,6 @@
 
   <head>
     <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="UK Web Archive Open Data : Repository of documentation about the open datasets published by the UK Web Archive." />
 
     <link rel="stylesheet" type="text/css" media="screen" href="/opendata/stylesheets/stylesheet.css">
@@ -33,13 +32,13 @@
       <section id="main_content" class="inner">
 
 {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
-{% capture num_parts %}{{ url_parts | number_of_words }}{% endcapture %}
+{% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
 {% assign previous="" %}
 <ul>
  {% if num_parts == "0" or num_parts == "-1" %}
-  <li><a href="/">home</a> &nbsp; </li>
+  <li><a href="/opendata/">home</a> &nbsp; </li>
  {% else %}
-  <li><a href="/">home</a> &#187; {{ num_parts }} {{ page.url }} {{ url_parts }} {{ breadcrumb_list }}</li>
+  <li><a href="/opendata/">home</a> &#187; {{ num_parts }} {{ page.url }} {{ url_parts }} {{ breadcrumb_list }}</li>
 
   {% for unused in site.pages limit:num_parts %}
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
