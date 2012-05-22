@@ -3,7 +3,7 @@ layout: default
 title: UK Web Domain Dataset (1996-2010)
 ---
 
-In partnership with [archive.org](http://www.archive.org/) and JISC, we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. This UK Web Domain Dataset (1996-2010) OR UK Domain Dark Archive ????
+In partnership with [archive.org](http://www.archive.org/) and JISC, we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. This UK Web Domain Dataset (1996-2010) 
 
 It is composed of 470466 files, mostly arc.gz, with 4494 warc.gz. Total size: 32TB, Average 71 MB, but very variable.
 
@@ -12,8 +12,8 @@ This dataset cannot be made generally available, but can be used to generate sec
 Secondary datasets
 ------------------
 
-* [UK Domain Dark Archive (1996-2010) Format Profile](fmt)
-* [UK Domain Dark Archive (1996-2010) Geoindex](geo)
+* [UK Web Domain Dataset (1996-2010) Format Profile](fmt)
+* [UK Web Domain Dataset (1996-2010) Geoindex](geo)
 
 
 Citing this dataset
