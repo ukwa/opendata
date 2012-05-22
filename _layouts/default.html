@@ -41,7 +41,7 @@
  {% else %}
   <li><a href="/">home</a> &#187; {{ num_parts }} {{ page.url }} {{url_parts}} </li>
 
-  {% for unused in breadcrumb_list limit:num_parts %}
+  {% for unused in url_parts limit:num_parts %}
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
    {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
 
