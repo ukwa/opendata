@@ -1,5 +1,5 @@
-UK Domain Dark Archive (1996-2010) Format Profile
-=================================================
+UK Web Domain Dataset (1996-2010) Format Profile
+================================================
 
 As well as collecting the MIME type delivered by the server, we have also run two format identification tools over the content of each HTTP 200 OK response. These tools were Apache Tika and DROID. All three MIME types are collected, along with the year the resource was crawled. These four pieces of information are treated as a 'key' for the resource, and the number of resources with that key are counted up, over the entire dataset. The result is output as tab separated data. For full details see, the Nanite codebase, tag v.0.1.1 was used to create this dataset.
 

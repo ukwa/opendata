@@ -1,5 +1,5 @@
-UK Domain Dark Archive (1996-2010) Geoindex
-===========================================
+UK Web Domain Dataset (1996-2010) Geoindex
+==========================================
 
 What does work is the RegEx-based indexer. You can run it like this
 
