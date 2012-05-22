@@ -33,12 +33,12 @@
 
 {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
 {% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
-{% assign previous="" %}
+{% assign previous="opendata" %}
 <ul>
  {% if num_parts == "0" or num_parts == "-1" %}
   <li><a href="/opendata/">home</a> &nbsp; </li>
  {% else %}
-  <li><a href="/opendata/">home</a> &#187; {{ num_parts }} {{ page.url }} {{ url_parts }} {{ breadcrumb_list }}</li>
+  <li><a href="/opendata/">home</a> &#187; </li>
 
   {% for unused in site.pages limit:num_parts %}
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
