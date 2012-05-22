@@ -20,17 +20,6 @@
           <h1 id="project_title"><a href="/opendata/">UK Web Archive Open Data</a></h1>
           <h2 id="project_tagline">Publishing open data about our web archives.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ukwa/opendata/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ukwa/opendata/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-
 {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
 {% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
 {% assign previous="/opendata" %}
@@ -50,6 +39,17 @@
   {% endfor %}
  {% endif %}
 </ul>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ukwa/opendata/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ukwa/opendata/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
 
 	<h2>{{ page.title }}</h2>
 	{{ content }}
