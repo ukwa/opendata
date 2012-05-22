@@ -379,7 +379,7 @@ Full-Width Styles
   margin: 0;
   padding: 0;
 }
-#breadcrumb {
+#breadcrumb li {
   display: inline;
   margin: 0;
   padding: 0;
