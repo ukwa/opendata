@@ -14,6 +14,10 @@ class CommentedFile:
     def __iter__(self):
         return self
 
+allowedChar = "a-z0-9A-Z\.\-\+"
+validBaseType = "[{}]+\/[{}]".format(allowedChar,allowedChar)
+reBaseType = re.compile(validBaseType)
+
 def parseType(fmt):
     if( fmt == "null" ):
         fmt = "application/x-unknown"
@@ -49,6 +53,12 @@ def appendParameter(fmt, params, param):
 def reduceType(fmt,version=False):
     (type, subtype, params) = parseType(fmt)
     fmt = type+"/"+subtype
+    # Remove trailing nonsense:
+    chare = re.compile("[^{}\/]+[^\/]+$".format(allowedChar))
+    fmt = chare.sub("",fmt)
+    # Only accept valid type identifiers:
+    if not reBaseType.match(fmt):
+        fmt = "application/x-malformed-mimetype"
     # Add name, to keep PUIDs understandable
     if subtype.find("puid") != -1:
         fmt = appendParameter(fmt,params,"name")
@@ -68,6 +78,6 @@ def bestType(fmtS,fmtT,fmtD):
         fmt = fmtD
     # For unrecognised formats, report the server identity
     if( fmt.startswith("text/plain") or fmt == "application/octet-stream" ):
-        fmt = fmtS
+        fmt = reduceType(fmtS)
     return fmt
     	

@@ -16,7 +16,7 @@ for row in tsv_file:
         print "ERROR: Could not load ",row
         continue
     
-    # This is a temporary override that looks at other stuff:
+    # This is an override that looks at software/source/hardware:
     # ---
     try:
         if fmtT != "null":
@@ -25,23 +25,30 @@ for row in tsv_file:
         print "ERROR: Could not parse: "+fmtT
         exit
     
+    # Clip out the sub-type
     #if params.has_key("version"):
     #    fmt = "{}\t{}".format(subtype,params["version"])
     #else:
     #    fmt = "{}\t{}".format(subtype,"-")
     fmt = "{}".format(subtype)
-        
-    key = 'software'
+    
+    #key = 'software'
+    key = 'source'
     #key = 'hardware'
     if params.has_key(key):
         val = params[key]
         # Include the major version, aggregate the rest:
-        val = re.sub(r"([^\d])(\d+)\.\d[^\"]*",r"\1\2.x",val)
+        #val = re.sub(r"([^\d])(\d+)\.\d[^\"]*",r"\1\2.x",val)
         # Just aggregate on the main name, ignoring what looks like version info:
         #val = re.sub(r"[^\d](\d+)\.\d.*",r"",val)
+        # Strip leading/trailing quotes, if any:
+        val = val.strip('"')
+        # Output inc. subtype:
         fmt = "{}\t{}".format(fmt,val)
     else:
-        fmt = "{}\t{}".format(fmt,None)
+        #fmt = "{}\t{}".format(fmt,None)
+        #continue
+        pass
         
     
     # ---
@@ -49,7 +56,7 @@ for row in tsv_file:
     
     fmt = bestType(fmtS,fmtT,fmtD)
     #fmt = reduceType(fmt,True)
-    fmt = reduceType(fmtT,True)
+    fmt = reduceType(fmt,False)
     #fmt = "X"
     
     # Aggregate stats:
