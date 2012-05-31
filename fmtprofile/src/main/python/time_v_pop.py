@@ -3,10 +3,10 @@ import csv
 from utils import *
 from collections import defaultdict
 
-tsv_file = csv.reader(CommentedFile(open(sys.argv[1], "rb")), delimiter='\t')
+tsv_file = csv.reader(CommentedFile(open(   sys.argv[1], "rb")), delimiter='\t')
 
 ym = 17
-floor = 10
+floor = 0
 floorfrac = 0.1/100.0
 start = 0
 
@@ -47,5 +47,6 @@ for row in tsv_file:
         if float(row[ym])/tot <= floorfrac and int(row[ym-1])/tot <= floorfrac:
             print "{}\t{}\t{}".format(row[0],yt,tot)
 
-for y in range(1,ym+1):
-    print "{}\t{}\t{}".format( y+1993, nf[y], nl[y] )
+#print "Year\tFirst Observed\tLast Observed"
+#for y in range(1,ym+1):
+#    print "{}\t{}\t{}".format( y+1993, nf[y], nl[y] )

@@ -26,16 +26,18 @@ for row in tsv_file:
 
     # Only report when the base type disagrees, ignore parameters:
     if fmtDr != fmtTr:
-    #if fmtTr == "application/octet-stream":
+    #if fmtTr == "application/octet-stream" and fmtDr == "application/octet-stream":
     #if True:
         #print fmtS,fmtT,fmtD
+        combo = "{}\t{}\t{}".format(fmtSr,fmtTr,fmtDr)
         #combo = "{}\t{}".format(fmtSr,fmtTr)
-        combo = "{}\t{}".format(fmtTr,fmtDr)
+        #combo = "{}\t{}".format(fmtTr,fmtDr)
         if not combo in dst:
             dst[combo] = 0
         dst[combo] += int(count)
 
-print "Server Type\tTika Type\tDROID Type\tCount"
+#print "Server Type\tTika Type\tDROID Type\tCount"
+print "Tika Type\tDROID Type\tCount"
 for fmt in sorted(dst):
     print "{}\t{}".format(fmt,dst[fmt])
 
