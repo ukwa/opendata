@@ -23,8 +23,8 @@ License
   </a>
   To the extent possible under law,
   <a rel="dct:publisher"
-     href="http://www.webarchive.org.uk/">
-    <span property="dct:title">The UK Web Archive</span></a>
+     href="http://data.webarchive.org.uk/opendata/ukwa.ds.2/">
+    <span property="dct:title">The Project Partners</span></a>
   has waived all copyright and related or neighboring rights to
   <span property="dct:title">The UK Web Domain Dataset (1996-2010) Format Profile</span>.
 </p>
