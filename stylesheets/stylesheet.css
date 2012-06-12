@@ -289,6 +289,7 @@ Full-Width Styles
   padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #693 no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
@@ -296,12 +297,15 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background: #009999;
+  background-image: url("../images/ukwa.jpg");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background: -moz-linear-gradient(top, #009999, #008282);
+  background: -webkit-linear-gradient(top, #009999, #008282);
+  background: -ms-linear-gradient(top, #009999, #008282);
+  background: -o-linear-gradient(top, #009999, #008282);
+  background: linear-gradient(top, #009999, #008282);
 }
 
 #header_wrap .inner {
@@ -313,7 +317,10 @@ Full-Width Styles
   color: #fff;
   font-size: 42px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: #333 0px 0px 10px;
+}
+#project_title a {
+  text-shadow: #333 0px 0px 10px;
 }
 
 #project_tagline {
@@ -321,7 +328,7 @@ Full-Width Styles
   font-size: 24px;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: #333 0px 0px 10px;
 }
 
 #downloads {
@@ -364,9 +371,9 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  background: #fefefe;
+  border-top: 1px solid #008C8C;
+  border-bottom: 1px solid #008C8C;
 }
 
 #main_content {
@@ -387,12 +394,23 @@ Full-Width Styles
 }
 #breadcrumb li a {
   color: white;
+  text-shadow: #333 0px 0px 10px;
 }
 
 #footer_wrap {
   background: #212121;
+  background: #099;
+  background: -moz-linear-gradient(top, #009999, #008282);
+  background: -webkit-linear-gradient(top, #009999, #008282);
+  background: -ms-linear-gradient(top, #009999, #008282);
+  background: -o-linear-gradient(top, #009999, #008282);
+  background: linear-gradient(top, #009999, #008282);
+  text-shadow: #333 0px 0px 10px;
 }
-
+#footer_wrap a {
+  color: white;
+  text-shadow: #333 0px 0px 10px;
+}
 
 
 /*******************************************************************************

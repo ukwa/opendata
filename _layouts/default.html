@@ -5,7 +5,11 @@
     <meta charset='utf-8' />
     <meta name="description" content="UK Web Archive Open Data : Repository of documentation about the open datasets published by the UK Web Archive." />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/opendata/stylesheets/stylesheet.css">
+    <base href="{{ site.baseurl }}/" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/stylesheets/stylesheet.css">
+
+    <link rel="icon" href="http://www.webarchive.org.uk/ukwa/favicon.ico">
 
     <title>{{ page.title }}</title>
   </head>
@@ -17,7 +21,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/ukwa/opendata">View on GitHub</a>
 
-          <h1 id="project_title"><a href="/opendata/">UK Web Archive Open Data</a></h1>
+          <h1 id="project_title"><a href="{{ site.baseurl }}">UK Web Archive Open Data</a></h1>
           <h2 id="project_tagline">Publishing open data about our web archives.</h2>
 
 {% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
@@ -25,9 +29,9 @@
 {% assign previous="/opendata" %}
 <ul id="breadcrumb">
  {% if num_parts == "0" or num_parts == "-1" %}
-  <li><a href="/opendata/">home</a> &nbsp; </li>
+  <li><a href="{{ site.baseurl }}/">home</a> &nbsp; </li>
  {% else %}
-  <li><a href="/opendata/">home</a></li>
+  <li><a href="{{ site.baseurl }}/">home</a></li>
 
   {% for unused in site.pages limit:num_parts %}
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
@@ -59,7 +63,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <img src="/opendata/images/ukwa.jpg" style="float:right;"/>
+        <img src="{{ site.baseurl }}/images/ukwa.jpg" style="float:right;"/>
         <p class="copyright">UK Web Archive Open Data maintained by <a href="http://www.webarchive.org.uk/">webarchive.org.uk</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
