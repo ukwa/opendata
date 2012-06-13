@@ -11,7 +11,6 @@ The geoindex is composed of some 700,641,549 lines of TSV data, each asserting t
 The data is not hosted on GitHub, as it is far too large. It can be downloaded from [here](http://www.webarchive.org.uk/datasets/ukwa.ds.2/geo/) in a compressed format (total download size, about 8GB).
 
 
-{% include jia_cc0.md %}
-
 {% include cite_doi.md %}
 
+{% include jia_cc0.md %}

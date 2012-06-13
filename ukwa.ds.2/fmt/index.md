@@ -9,7 +9,6 @@ This dataset is a format profile, summarising the data formats (MIME types) cont
 This dataset is hosted in this GitHub repository. You can download it from [here](https://github.com/ukwa/opendata/tree/master/datasets/ukwa.ds.2/fmt), where you'll also find [a full description of the data](https://github.com/ukwa/opendata/tree/master/datasets/ukwa.ds.2/fmt#uk-web-domain-dataset-1996-2010-format-profile).
 
 
-{% include jia_cc0.md %}
-
 {% include cite_doi.md %}
 
+{% include jia_cc0.md %}
