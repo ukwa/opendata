@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <base href="{{ site.baseurl }}/" />
+
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
@@ -32,7 +34,7 @@ background: #008282;
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="bootstrap/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="http://www.webarchive.org.uk/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
@@ -49,12 +51,12 @@ background: #008282;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="bootstrap/examples/hero.html#">Project name</a>
+          <a class="brand" href="{{ site.baseurl }}/"><img src="http://www.webarchive.org.uk/favicon.ico"/>UK Web Archive Open Data</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="bootstrap/examples/hero.html#">Home</a></li>
-              <li><a href="bootstrap/examples/hero.html#about">About</a></li>
-              <li><a href="bootstrap/examples/hero.html#contact">Contact</a></li>
+              <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
+              <li><a href="https://github.com/ukwa/opendata">GitHub</a></li>
+              <li><a href="http://www.webarchive.org.uk/">UKWA</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -63,36 +65,88 @@ background: #008282;
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more »</a></p>
-      </div>
-
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="bootstrap/examples/hero.html#">View details »</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="bootstrap/examples/hero.html#">View details »</a></p>
+        <div class="span3">
+
+<p>
+{% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
+{% capture num_parts %}{{ url_parts | number_of_words }}{% endcapture %}
+{% assign previous="/opendata" %}
+<ul class="breadcrumb">
+ {% if num_parts == "0" or num_parts == "-1" %}
+  <li><a href="{{ site.baseurl }}/">home</a> &nbsp; </li>
+ {% else %}
+  <li><a href="{{ site.baseurl }}/">home</a></li>
+
+  {% for unused in site.pages limit:num_parts %}
+   {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
+   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+
+   <li> <span class="divider">&#187;</span> <a href="{{previous}}">{{ first_word }}</a></li>
+
+   {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+  {% endfor %}
+ {% endif %}
+</ul>
+</p>
+
+<p>
+<ul class="nav nav-list well">
+  <li class="nav-header">
+    UK Web Domain (1996-2010)
+  </li>
+  <li><a href="{{ site.baseurl }}/ukwa.ds.2">The Archive</a></li>
+  <li><a href="{{ site.baseurl }}/ukwa.ds.2/fmt">The Format Profile</a></li>
+  <li><a href="{{ site.baseurl }}/ukwa.ds.2/geo">The Geoindex</a></li>
+  
+  <li class="nav-header">
+    UK Selective Web Archive
+  </li>
+  <li><a href="{{ site.baseurl }}/ukwa.ds.1">The Archive</a></li>
+
+  <li class="nav-header">
+    APIs
+  </li>
+  <li><a href="{{ site.baseurl }}/wayback">Wayback</a></li>
+  <li><a href="{{ site.baseurl }}/memento">Memento</a></li>
+  <li>Hosted Linked Open Data (TBA)</li>
+
+  <li class="nav-header">
+    Projects
+  </li>
+  <li><a href="http://domaindarkarchive.blogspot.co.uk/">Analytical Access to the Domain Dark Archive</a></li>
+  <li><a href="http://www.oii.ox.ac.uk/research/projects/?id=88">Big Data: Demonstrating the Value of the UK Web Domain Dataset for Social Science Research</a></li>
+  <li><a href="http://www.scape-project.eu">SCAPE: Scaleable Preservation Environments</a></li>
+
+  <li class="nav-header">
+    Related work
+  </li>
+  <li><a href="https://github.com/commoncrawl/commoncrawl">Common Crawl</a></li>
+  <li><a href="http://httparchive.org/">httparchive.org</a></li>
+
+</ul>
+</p>
+
+        <p>
+          <a class="btn" href="mailto:web-archivist@bl.uk">Any Questions?</a>
+        </p>
+
        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="bootstrap/examples/hero.html#">View details »</a></p>
-        </div>
+
+        <div class="span9">
+          <div class="page-header">
+            <h2>{{ page.title }}</h2>
+          </div>
+           {{ content }}
+       </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>© Company 2012</p>
+        <a class="btn" href="https://github.com/ukwa/opendata" style="float:right;">View on GitHub <img src="{{ site.baseurl }}/images/blacktocat.png"/></a>
+        <p class="copyright">UK Web Archive Open Data maintained by <a href="http://www.webarchive.org.uk/">webarchive.org.uk</a></p>
       </footer>
 
     </div> <!-- /container -->
@@ -102,6 +156,14 @@ background: #008282;
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-  
-
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-7571526-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 </body></html>

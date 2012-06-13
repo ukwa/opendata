@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: bootstrap
 title: Welcome
 ---
+<img src="{{ site.baseurl }}/images/ukwa.jpg" style="float:right;"/>
 
 In order to facilitate research, and so we might better understand and preserve the UK's web history, the UK Web Archive has decided to make a number of data and API services available for general use. We also make a few example tools available, showing how the open data might be used, and these are hosted in this GitHub repository.
 
@@ -9,13 +10,6 @@ We hope that by making these datasets available, the broader community will find
 
 Datasets, Tools & APIs
 ----------------------
-
-We hold the following datasets, from which we offer a number of secondary datasets and, where practical, API access.
-
-* [UK Web Domain Dataset (1996-2010)](ukwa.ds.2)
-  * [UK Web Domain Dataset (1996-2010) Format Profile](ukwa.ds.2/fmt)
-  * [UK Web Domain Dataset (1996-2010) Geoindex](ukwa.ds.2/geo)
-* [UK Selective Web Archive](ukwa.ds.1)
 
 ### Open Datasets ###
 
@@ -29,7 +23,7 @@ Postcodes referenced by UK web pages, over time (data of crawl).
 #### Format Profile Data ####
 Number of resources of particular MIME types, by year. Also compares the server MIME type with that determined by format identification tools.
 
-For all the details, see the README files and code in [the GitHub repository](http://github.com/ukwa/opendata/).
+For all the details, follow the links on the left, or look through the README files and code in [the GitHub repository](http://github.com/ukwa/opendata/).
 
 ### Tools ###
 
@@ -39,29 +33,7 @@ We also make a few tools available, which illustrate how the open datasets might
 
 We support a number of different APIs, although not all data sets are exposed over the same APIs. Check the dataset descriptions for details.
 
-* [Wayback](wayback)
-* [Memento](memento)
-* Hosted Linked Open Data (TBC)
 
 
-Projects
---------
 
-We are working with the following projects to exploit these datasets:
-
-* [Analytical Access to the Domain Dark Archive](http://domaindarkarchive.blogspot.co.uk/)
-* [Big Data: Demonstrating the Value of the UK Web Domain Dataset for Social Science Research](http://www.oii.ox.ac.uk/research/projects/?id=88)
-* [SCAPE: Scaleable Preservation Environments](http://www.scape-project.eu)
-
-If you would like to work on this dataset directly, or have exploited the data in the secondary datasets, please get in touch with us at [this address](mailto:web-archivist@bl.uk).
-
-### Related work ###
-
-* https://github.com/commoncrawl/commoncrawl
-
-
-Further Information
--------------------
-
-Contact us via [web-archivist@bl.uk](mailto:web-archivist@bl.uk).
 

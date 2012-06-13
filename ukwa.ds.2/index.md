@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: bootstrap
 title: UK Web Domain Dataset (1996-2010)
+doi: 10.5259/ukwa.ds.2/1
 ---
 
 In partnership with [archive.org](http://www.archive.org/) and JISC, we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The UK Web Domain Dataset (1996-2010) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
@@ -12,20 +13,17 @@ This dataset cannot be made generally available, but can be used to generate sec
 Secondary datasets
 ------------------
 
-* [UK Web Domain Dataset (1996-2010) Format Profile](fmt)
-* [UK Web Domain Dataset (1996-2010) Geoindex](geo)
+* [UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
+* [UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
 
 
-Citing this dataset
--------------------
-
-If you wish to cite this dataset, please use DOI: [10.5259/ukwa.ds.2/1](http://dx.doi.org/10.5259/ukwa.ds.2/1)
+{% include cite_doi.md %}
 
 In partnership with
 -------------------
 
-[<img src="/opendata/images/jisc-logo-sml.png"/>](http://www.jisc.ac.uk/)
-[<img src="/opendata/images/ia-logo-sml.png"/>](http://www.archive.org/)
+[<img src="{{ site.baseurl }}/images/jisc-logo-sml.png"/>](http://www.jisc.ac.uk/)
+[<img src="{{ site.baseurl }}/images/ia-logo-sml.png"/>](http://www.archive.org/)
 
 
 
