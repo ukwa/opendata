@@ -17,7 +17,7 @@ for row in tsv_file:
 
     
     # Include the version info when comparing
-    version = False    
+    version = True    
 
     # Normalise, lower case and no space after the ;
     fmtSr = reduceType(fmtS,version)
@@ -29,9 +29,9 @@ for row in tsv_file:
     #if fmtTr == "application/octet-stream" and fmtDr == "application/octet-stream":
     #if True:
         #print fmtS,fmtT,fmtD
-        combo = "{}\t{}\t{}".format(fmtSr,fmtTr,fmtDr)
+        #combo = "{}\t{}\t{}".format(fmtSr,fmtTr,fmtDr)
         #combo = "{}\t{}".format(fmtSr,fmtTr)
-        #combo = "{}\t{}".format(fmtTr,fmtDr)
+        combo = "{}\t{}".format(fmtTr,fmtDr)
         if not combo in dst:
             dst[combo] = 0
         dst[combo] += int(count)
