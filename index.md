@@ -1,6 +1,6 @@
 ---
 layout: bootstrap
-title: Welcome
+title: UK Web Archive Open Data
 ---
 <img src="{{ site.baseurl }}/images/ukwa.jpg" style="float:right;"/>
 

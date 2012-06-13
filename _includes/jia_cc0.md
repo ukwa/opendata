@@ -11,5 +11,5 @@ License
      href="{{ site.baseurl }}/ukwa.ds.2/">
     <span property="dct:title">The Project Partners</span></a>
   have waived all copyright and related or neighboring rights to the
-  <span property="dct:title">{{ page.title }}</span> (<a href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>).
+  <span property="dct:title">{{ page.subtitle }} {{ page.title }}</span> (<a href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>).
 </p>
