@@ -7,17 +7,22 @@
     <meta name="description" content="UK Web Archive Open Data">
     <meta name="author" content="www.webarchive.org.uk">
 
-    <base href="{{ site.baseurl }}/" />
-
     <!-- Le styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/bootstrap/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
 .navbar-inner {
-background-image: -webkit-linear-gradient(top, #099, #008282);
+  background: #099;
+  background-image: -moz-linear-gradient(top, #099, #008282);
+  background-image: -ms-linear-gradient(top, #099, #008282);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#099), to(#008282));
+  background-image: -webkit-linear-gradient(top, #099, #008282);
+  background-image: -o-linear-gradient(top, #099, #008282);
+  background-image: linear-gradient(top, #099, #008282);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#099', endColorstr='#008282', GradientType=0);
 }
 .navbar .brand, .navbar .nav > li > a {
  color: white;
@@ -26,7 +31,7 @@ background-image: -webkit-linear-gradient(top, #099, #008282);
 background: #008282;
 }
     </style>
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -35,10 +40,10 @@ background: #008282;
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="{{ site.baseurl }}/images/ukwa-icon-16.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
 
   <body>

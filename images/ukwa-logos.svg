@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -150,5 +150,65 @@
            style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:80.00000119%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS Bold"
            id="tspan3805">WA</tspan></text>
     </g>
+    <rect
+       inkscape:export-ydpi="149.95587"
+       inkscape:export-xdpi="149.95587"
+       inkscape:export-filename="/Users/andy/Documents/workspace/opendata/images/ukwa-icon.png"
+       y="723.7121"
+       x="101.51863"
+       height="240"
+       width="240"
+       id="rect3084"
+       style="fill:#009999;fill-opacity:1;stroke:none" />
+    <g
+       inkscape:export-ydpi="149.95587"
+       inkscape:export-xdpi="149.95587"
+       inkscape:export-filename="/Users/andy/Documents/workspace/opendata/images/ukwa-icon.png"
+       id="g3086"
+       transform="translate(1.4298399,348.88094)">
+      <text
+         xml:space="preserve"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:80.00000119%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS Bold"
+         x="214.47598"
+         y="222.20291"
+         id="text3088"
+         sodipodi:linespacing="80.000001%"
+         transform="translate(0,308.2677)"><tspan
+           sodipodi:role="line"
+           x="214.47598"
+           y="222.20291"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:80.00000119%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS Bold"
+           id="tspan3090">(αβ)</tspan><tspan
+           sodipodi:role="line"
+           x="214.47598"
+           y="337.40292"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:80.00000119%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS Bold"
+           id="tspan3092" /></text>
+      <text
+         sodipodi:linespacing="80.000001%"
+         id="text3094"
+         y="530.47058"
+         x="220.69864"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:80.00000119%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS Bold"
+         xml:space="preserve"><tspan
+           id="tspan3098"
+           style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:80.00000119%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS Bold"
+           y="530.47058"
+           x="220.69864"
+           sodipodi:role="line" /></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS"
+       x="494.72461"
+       y="628.27747"
+       id="text3102"
+       sodipodi:linespacing="125%"
+       transform="translate(0,308.2677)"><tspan
+         sodipodi:role="line"
+         id="tspan3104"
+         x="494.72461"
+         y="628.27747"
+         style="font-size:144px;font-family:Times New Roman;-inkscape-font-specification:Times New Roman">(oαβ)</tspan></text>
   </g>
 </svg>
