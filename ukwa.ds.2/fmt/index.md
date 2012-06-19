@@ -32,4 +32,3 @@ Each new version comes to dominate the picture, then slowly fade away. Over time
 {% include cite_doi.md %}
 
 {% include jia_cc0.md %}
-
