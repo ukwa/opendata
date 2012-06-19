@@ -39,7 +39,7 @@ Although this is rather clumsy, collecting this initial data will help us find a
 
 Tools
 -----
-Some example scripts for processing this data can be found [here](../../fmtprofile)
+Some example scripts for processing this data can be found [here](../../tools)
 
 License
 -------
