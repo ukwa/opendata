@@ -104,11 +104,11 @@ d3.csv("link-index.csv", function(domains) {
 
     groupText.append("textPath")
         .attr("xlink:href", function(d, i) { return "#group" + i; })
-        .text(function(d, i) { return domains[i].name; });
+        .text(function(d, i) { if( domains[i].name.match(/\.uk$/) ) { return domains[i].name;} });
 
     // Remove the labels that don't fit. :(
-    groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
-        .remove();
+    //groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
+    //    .remove();
 
     // Add the chords.
     var chord = svg.selectAll(".chord")
