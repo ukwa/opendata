@@ -4,6 +4,20 @@ title: Links by Domain Suffix
 ---
 <style>
 
+.tab-pane {
+  text-align: center;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
 #circle circle {
   fill: none;
   pointer-events: all;
@@ -59,7 +73,7 @@ svg.append("circle")
     .attr("r", outerRadius);
 
 
-d3.csv("link-index.csv", function(cities) {
+d3.csv("link-index.csv", function(domains) {
   d3.json("link-matrix.json", function(matrix) {
 
     // Compute the chord layout.
@@ -74,14 +88,14 @@ d3.csv("link-index.csv", function(cities) {
 
     // Add a mouseover title.
     group.append("title").text(function(d, i) {
-      return cities[i].name + ": " + formatPercent(d.value) + " of origins";
+      return domains[i].name + ": " + formatPercent(d.value) + " of link sources";
     });
 
     // Add the group arc.
     var groupPath = group.append("path")
         .attr("id", function(d, i) { return "group" + i; })
         .attr("d", arc)
-        .style("fill", function(d, i) { return cities[i].color; });
+        .style("fill", function(d, i) { return domains[i].color; });
 
     // Add a text label.
     var groupText = group.append("text")
@@ -90,7 +104,7 @@ d3.csv("link-index.csv", function(cities) {
 
     groupText.append("textPath")
         .attr("xlink:href", function(d, i) { return "#group" + i; })
-        .text(function(d, i) { return cities[i].name; });
+        .text(function(d, i) { return domains[i].name; });
 
     // Remove the labels that don't fit. :(
     groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
@@ -101,16 +115,16 @@ d3.csv("link-index.csv", function(cities) {
         .data(layout.chords)
       .enter().append("path")
         .attr("class", "chord")
-        .style("fill", function(d) { return cities[d.source.index].color; })
+        .style("fill", function(d) { return domains[d.source.index].color; })
         .attr("d", path);
 
     // Add an elaborate mouseover title for each chod.
     chord.append("title").text(function(d) {
-      return cities[d.source.index].name
-          + " → " + cities[d.target.index].name
+      return domains[d.source.index].name
+          + " → " + domains[d.target.index].name
           + ": " + formatPercent(d.source.value)
-          + "\n" + cities[d.target.index].name
-          + " → " + cities[d.source.index].name
+          + "\n" + domains[d.target.index].name
+          + " → " + domains[d.source.index].name
           + ": " + formatPercent(d.target.value);
     });
 
@@ -169,7 +183,6 @@ d3.csv("link-index.csv", function(cities) {
  
 <script>
 
-$(document).ready(function () {
     addNetworkPlot(d3.select("#net1996"), "1996");
     addNetworkPlot(d3.select("#net1997"), "1997");
     addNetworkPlot(d3.select("#net1998"), "1998");
@@ -185,11 +198,6 @@ $(document).ready(function () {
     addNetworkPlot(d3.select("#net2008"), "2008");
     addNetworkPlot(d3.select("#net2009"), "2009");
     addNetworkPlot(d3.select("#net2010"), "2010");
-
-    $('#net1996').tab('show');
-    $('#net1997').tab('show');
-    $('#net1998').tab('show');
-});
 
 </script>
 
