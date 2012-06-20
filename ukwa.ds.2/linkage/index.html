@@ -43,8 +43,8 @@ path.chord {
 
 function addNetworkPlot(element, year) {
 
-var width = 850,
-    height = 850,
+var width = 640,
+    height = 640,
     outerRadius = Math.min(width, height) / 2 - 10,
     innerRadius = outerRadius - 24;
 
@@ -98,7 +98,7 @@ d3.csv("link-index.csv", function(domains) {
         .style("fill", function(d, i) { return domains[i].color; });
 
     // Add a text label.
-    var groupText = group.append("text")
+    var groupText = group.append("text") 
         .attr("x", 6)
         .attr("dy", 15);
 
