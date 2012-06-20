@@ -83,7 +83,10 @@ fi = open('link-index.csv','w')
 fi.write("name,color\n")
 
 for src in sorted(domains):
-        # Write the index
-        fi.write("{},{}\n".format(src,"#ff0000"))
+    colour = '#444444'
+    if src.endswith(".uk"):
+        colour = "#880000"
+    # Write the index
+    fi.write("{},{}\n".format(src,colour))
 # and close
 fi.close()
