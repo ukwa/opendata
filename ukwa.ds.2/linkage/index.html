@@ -84,7 +84,8 @@ d3.csv("link-index.csv", function(domains) {
         .data(layout.groups)
       .enter().append("g")
         .attr("class", "group")
-        .on("mouseover", mouseover);
+        .on("mouseover", mouseover)
+        .on("mouseout", mouseout);
 
     // Add a mouseover title.
     group.append("title").text(function(d, i) {
@@ -132,7 +133,12 @@ d3.csv("link-index.csv", function(domains) {
       chord.classed("fade", function(p) {
         return p.source.index != i
             && p.target.index != i;
-      });
+      });      
+    }
+    function mouseout(d, i) {
+      chord.classed("fade", function(p) {
+        return false;
+      });      
     }
 
   });
