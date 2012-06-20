@@ -1,7 +1,7 @@
-----
+---
 layout: bootstrap
 title: Links by Domain Suffix
-----
+---
 <style>
 
 #circle circle {
@@ -127,7 +127,25 @@ d3.csv("link-index.csv", function(cities) {
 }
 
 
-addNetworkPlot(d3.select("body"), "1996");
-addNetworkPlot(d3.select("body"), "2009");
-
 </script>
+
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#1996">1996</a></li>
+  <li><a href="#1997">1997</a></li>
+  <li><a href="#2009">2009</a></li>
+  <li><a href="#2010">2010</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="1996"></div>
+  <div class="tab-pane" id="1997"></div>
+  <div class="tab-pane" id="2009"></div>
+  <div class="tab-pane" id="2010"></div>
+</div>
+ 
+<script>
+addNetworkPlot(d3.select("#1996"), "1996");
+addNetworkPlot(d3.select("#2009"), "2009");
+</script>
+
+
