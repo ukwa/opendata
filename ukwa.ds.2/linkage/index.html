@@ -36,7 +36,7 @@ path.chord:hover {
   opacity: 1.0;
 }
 #circle:hover path.fade {
-   opacity: 1.0;
+   opacity: 0.1;
 }
 </style>
 
@@ -82,10 +82,7 @@ path.chord:hover {
 
 <script>
 
-function LinkagePlot(telement, tyear) {
-
- var year = tyear;
- var element = telement
+function LinkagePlot( element, year ) {
 
 var width = 640,
     height = 640,
@@ -175,8 +172,8 @@ d3.csv("link-index.csv", function(domains) {
 
     function mouseover(d, i) {
       chord.classed("fade", function(p) {
-        return p.source.index == i
-            || p.target.index == i;
+        return p.source.index != i
+            && p.target.index != i;
       });      
     }
     function mouseout(d, i) {
