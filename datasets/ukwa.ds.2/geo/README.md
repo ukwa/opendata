@@ -40,3 +40,7 @@ License
   <span property="dct:title">The UK Web Domain Dataset (1996-2010) Geoindex</span>.
 </p>
 
+
+Citing this dataset
+-------------------
+If you do wish to cite this dataset, please this DOI: [**10.5259/ukwa.ds.2/geo/1**](http://dx.doi.org/10.5259/ukwa.ds.2/geo/1).
