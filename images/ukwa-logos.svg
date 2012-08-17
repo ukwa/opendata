@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,13 +53,13 @@
      id="layer1"
      transform="translate(0,-308.2677)">
     <rect
-       y="356.24323"
-       x="408.9342"
-       height="435.88806"
-       width="617.47766"
+       y="360.13129"
+       x="402.67303"
+       height="420"
+       width="630"
        id="rect3821"
        style="fill:#009999;fill-opacity:1;stroke:none"
-       inkscape:export-filename="/Users/andy/Documents/workspace/opendata/images/ukwa-logo.png"
+       inkscape:export-filename="/Users/andy/Sites/opendata/images/ukwa-logo.png"
        inkscape:export-xdpi="149.95587"
        inkscape:export-ydpi="149.95587" />
     <rect
@@ -73,39 +73,35 @@
        inkscape:export-xdpi="149.95587"
        inkscape:export-ydpi="149.95587" />
     <g
-       id="g3823"
-       transform="translate(-10.008911,4.0063782)"
-       inkscape:export-filename="/Users/andy/Documents/workspace/opendata/images/ukwa-logo.png"
-       inkscape:export-xdpi="149.95587"
-       inkscape:export-ydpi="149.95587">
+       id="g3027">
       <text
          sodipodi:linespacing="80.000001%"
          id="text2995"
-         y="474.70685"
-         x="441.72101"
+         y="476.65723"
+         x="431.7121"
          style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:80.00000119%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS Bold"
          xml:space="preserve"><tspan
-           y="474.70685"
-           x="441.72101"
+           y="476.65723"
+           x="431.7121"
            id="tspan2997"
            sodipodi:role="line">UK</tspan><tspan
            id="tspan2999"
-           y="589.90686"
-           x="441.72101"
+           y="591.85724"
+           x="431.7121"
            sodipodi:role="line">WEB</tspan><tspan
            id="tspan3001"
-           y="705.10687"
-           x="441.72101"
+           y="707.05725"
+           x="431.7121"
            sodipodi:role="line">ARCHIVE</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3003"
-         y="756.97327"
-         x="436.40582"
+         y="754.92371"
+         x="426.39691"
          style="font-size:57px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS"
          xml:space="preserve"><tspan
-           y="756.97327"
-           x="436.40582"
+           y="754.92371"
+           x="426.39691"
            id="tspan3005"
            sodipodi:role="line">preserving uk websites</tspan></text>
     </g>
