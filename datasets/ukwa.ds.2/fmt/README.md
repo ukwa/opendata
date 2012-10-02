@@ -28,7 +28,7 @@ At the most basic, many formats have some 'software' field that we can map to a 
 
 It may be possible to collect and normalise these formulations, but for now, we seek to simply document the conflict. Thus, for a particular PDF, we may have an extended MIME Type like this:
 <pre>
-	application/pdf; version=1.4"; creator=Writer; producer="OpenOffice.org 3.2"
+	application/pdf; version=1.4; creator=Writer; producer="OpenOffice.org 3.2"
 </pre>
 whereas for a ODF document, we have forms like this:
 <pre>
