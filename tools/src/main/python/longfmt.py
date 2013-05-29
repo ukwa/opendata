@@ -8,14 +8,22 @@ byy = {}
 tot = {}
 minYear = -1
 maxYear = -1
+tottotal = 0
+badtotal = 0
 for row in tsv_file:
     #print row
     try:
         (fmtS, fmtT, fmtD, year, count) = row
     except:
-        print "ERROR: Could not load ",row
-        continue
+        try:
+            (fmtSa, fmtSb, fmtT, fmtD, year, count) = row
+            fmtS = "{}\t{}".format(fmtSa,fmtSb)
+            badtotal = badtotal + int(count)
+        except:
+            print "ERROR: Could not load ",row
+            continue
     
+    tottotal = tottotal + int(count)
     # This is an override that looks at software/source/hardware:
     # ---
     try:
@@ -32,8 +40,8 @@ for row in tsv_file:
     #    fmt = "{}\t{}".format(subtype,"-")
     fmt = "{}".format(subtype)
     
-    #key = 'software'
-    key = 'source'
+    key = 'software'
+    #key = 'source'
     #key = 'hardware'
     if params.has_key(key):
         val = params[key]
@@ -55,9 +63,9 @@ for row in tsv_file:
     # 
     
     fmt = bestType(fmtS,fmtT,fmtD)
-    #fmt = reduceType(fmt,True)
-    fmt = reduceType(fmt,False)
-    #fmt = "X"
+    ##fmt = reduceType(fmt,True)
+    #fmt = reduceType(fmt,False)
+    ##fmt = "X"
     
     # Aggregate stats:
     if not fmt in byy:
@@ -95,7 +103,7 @@ for fmt in sorted(byy):
             out = "{}\t{}".format(out, byy[fmt][year])
             total += byy[fmt][year]
             # Count total formats:
-            if byy[fmt][year] > 100:
+            if byy[fmt][year] > 0:
                 ftot[year] += 1
         else:
             out = "{}\t{}".format(out,0)
@@ -111,3 +119,6 @@ out = "Total Formats"
 for year in range(minYear,maxYear+1):
     out = "{}\t{}".format(out,ftot[year])
 print out
+
+#print tottotal, badtotal
+
