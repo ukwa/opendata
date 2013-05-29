@@ -1,13 +1,13 @@
 ---
 layout: bootstrap
-title: Host Linkage Graph
+title: Host Link Graph
 subtitle: JISC UK Web Domain Dataset (1996-2010)
 doi: 10.5259/ukwa.ds.2/host.linkage/1
 ---
 
 The ~2.5 billion 200 OK responses in the [JISC UK Web Domain Dataset (1996-2010)]({{ site.baseurl }}/ukwa.ds.2/) dataset have been scanned for hyperlinks. For each link, we extract the host that the link targets, and use this to build up a picture of which hosts have linked to which other hosts, over time.
 
-This host-level linkage index summarises the number of links between hosts, in each year. The data format is a slightly unusual, as you can see from this snippet:
+This host-level link graph summarises the number of links between hosts, in each year. The data format is a slightly unusual, as you can see from this snippet:
 
 <pre>
 1996|appserver.ed.ac.uk|portico.bl.uk   1

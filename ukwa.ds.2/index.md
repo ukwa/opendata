@@ -15,7 +15,7 @@ Secondary datasets
 
 * [JISC UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
 * [JISC UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
-* [JISC UK Web Domain Dataset (1996-2010) Host Linkage Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
+* [JISC UK Web Domain Dataset (1996-2010) Host Link Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
 
 
 {% include cite_doi.md %}
