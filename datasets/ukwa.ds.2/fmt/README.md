@@ -21,6 +21,7 @@ At heart, we introduce three extended forms:
 * For formats with MIME types, we add a version parameter that can be mapped to a PRONOM ID. e.g. instead of just 'application/pdf', we can use 'application/pdf; version=1.4', and map this to PUID fmt/18.
 * For formats with no MIME type, but with a PRONOM ID, we can mind non-standard MIME types that bridge the gap, such as: 'application/x-puid-fmt-44'
 * For formats with neither a MIME Type or a PUID, we can usually fall back on file extensions, e.g. 'application/x-ext-ini' for a '.ini' file.
+* Note that for complex audiovisual media, this could also be extended to include the use of the codec parameter as specified in RFC 4181 http://tools.ietf.org/html/rfc4281#section-5
 
 To help us cope in those cases where a suitable PRONOM record does not yet exist, we need to be able to link a format back to the software that created it. To this end, we also seek to formalise extended MIME Type parameters that can be used to capture the encoding software. This is complicated by the fact that different formats currently encode this information in different and often confusing ways. For example, it is not always clear if a format is documenting the software that created an object, or the software that an object is being encoded for - i.e. when you take a 'Word 14' DOCX and export as 'Word 97-2004' Doc, which software identity is recorded where?
 
