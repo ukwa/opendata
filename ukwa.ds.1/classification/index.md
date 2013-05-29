@@ -10,4 +10,3 @@ Full description TBA.
 
 
 
-{% include cite_doi.md %}
