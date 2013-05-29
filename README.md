@@ -1,5 +1,7 @@
 UK Web Archive Open Data
 ========================
 
-This branch of the repository contains the documentation for our open datasets.
+For an introduction, see http://data.webarchive.org.uk/opendata
+
+This repository contains tools, format information, and some open data from the UK Web Archive.
 
