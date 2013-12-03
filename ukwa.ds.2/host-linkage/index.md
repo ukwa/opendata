@@ -41,6 +41,18 @@ Perhaps the simplest way to exploit this dataset is via the zgrep command. This 
 
 This subset of the data has also been [made available for download](http://www.webarchive.org.uk/datasets/ukwa.ds.2/linkage/).
 
+Characteristics
+---------------
+
+Some preliminary investigations revealed some overall characteristics of this data set that one should be aware of when attempting to exploit it and intrepret the results. 
+
+The following diagram shows the total number of known pairs of linked hosts for each year ([also available as CSV data here](distinct-host-host-links.csv)). 
+
+![Distinct Host-Host Links By Year](DistinctHostHostLinksByYear.png)
+
+There is a quite remarkable spike for 2004 - some 1.2 billion extra pairs of linked hosts, over a baseline of about 60 million. Paging through the 2004 results, it seems that this corresponds to a particularly large [link farm](https://en.wikipedia.org/wiki/Link_farm), aiming to game Google's PageRank metric.
+
+Therefore, for 2004 at least, you should consider stripping out domains which host very large numbers of distinct host subdomains. Keep in mind, however, that doing this too aggressively can also throw out valid results from hosted platforms, e.g. blog services.
 
 {% include cite_doi.md %}
 
