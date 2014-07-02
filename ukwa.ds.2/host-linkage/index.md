@@ -41,6 +41,26 @@ Perhaps the simplest way to exploit this dataset is via the zgrep command. This 
 
 This subset of the data has also been [made available for download](http://www.webarchive.org.uk/datasets/ukwa.ds.2/linkage/).
 
+Issues
+------
+
+Be aware that the web archives from which this data was derived had different deduplication methods applied to it in different years. As a result, the single resource in the archive which gives rise to:
+ 
+    2008|host1.co.uk|host2.co.uk|1
+ 
+may not show in this data as
+ 
+    2009|host1.co.uk|host2.co.uk|1
+ 
+if the resource was present in 2009, but had not changed.
+ 
+Similarly, the difference between the following two statements may be accounted for by the same deduplication:
+ 
+    2008|host3.co.uk|host4.co.uk|100
+    2009|host3.co.uk|host4.co.uk|1
+ 
+There may still be 100 linking resources in 2009, but 99 of them may be unchanged and thus absent from this dataset.
+
 Characteristics
 ---------------
 
