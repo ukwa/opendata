@@ -10,7 +10,14 @@ It is composed of 470,466 files, mostly arc.gz, with 4,494 warc.gz files. Total 
 
 This dataset cannot be made generally available here, but can be used to generate secondary datasets, and these can be made available under open license terms.
 
-Before interpreting results from this dataset, or any [secondary datasets](secondary-datasets) based upon it, please refer to the known issues with this dataset (below).
+Before interpreting results from this dataset, or any secondary-datasets based upon it, please refer to the [known issues with this dataset](#issues).
+
+Secondary datasets
+------------------
+
+* [JISC UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
+* [JISC UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
+* [JISC UK Web Domain Dataset (1996-2010) Host Link Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
 
 {% include cite_doi.md %}
 
@@ -40,13 +47,6 @@ Since 2008, de-duplication was turned on in some select cases. Also, it would be
 The extracted data contains all captures of .uk in the Internet Archive Web collection (for the given time range). A capture stored in an ARC file was extracted into an ARC file, while a capture that was stored in a WARC file was extracted into a WARC file. No limits on resource sizes were placed in the extraction. 
  
 Also, after extracting all these (W)ARCs, IA generated WAT files to find embedded resources (as identified by the original crawl process) not belonging to .uk to be included for extraction as well. A second round of extraction added these embedded resources to this dataset.
-
-Secondary datasets
-------------------
-
-* [JISC UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
-* [JISC UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
-* [JISC UK Web Domain Dataset (1996-2010) Host Link Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
 
 In partnership with
 -------------------
