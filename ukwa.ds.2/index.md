@@ -4,21 +4,15 @@ title: JISC UK Web Domain Dataset (1996-2010)
 doi: 10.5259/ukwa.ds.2/1
 ---
 
-In partnership with [archive.org](http://www.archive.org/) and JISC, we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The JISC UK Web Domain Dataset (1996-2010) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
+In partnership with the [Internet Archive](http://www.archive.org/) and [JISC](http://www.jisc.ac.uk/), we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The JISC UK Web Domain Dataset (1996-2010) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
 
 It is composed of 470466 files, mostly arc.gz, with 4494 warc.gz. Total size: 32TB, Average 71 MB per archive file, but this is very variable because the crawler does not split resources across archives.
 
 This dataset cannot be made generally available, but can be used to generate secondary datasets, and these can be made available under open license terms.
 
-Before interpreting results from this dataset, or any secondary datasets based upon it, please refer to the [known issues with this dataset][#issues] (below).
+Before interpreting results from this dataset, or any [secondary datasets](secondary-datasets) based upon it, please refer to the known issues with this dataset (below).
 
-Secondary datasets
-------------------
-
-* [JISC UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
-* [JISC UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
-* [JISC UK Web Domain Dataset (1996-2010) Host Link Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
-
+{% include cite_doi.md %}
 
 Issues
 ------
@@ -49,7 +43,12 @@ The extracted data contains all captures of .uk in the Archive (for the given ti
  
 Also, after extracting all these (W)ARCs, we generated WAT files to find embedded resources not belonging to .uk to be included for extraction as well. A second round of extraction copied over these embedded resources.
 
-{% include cite_doi.md %}
+Secondary datasets
+------------------
+
+* [JISC UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
+* [JISC UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
+* [JISC UK Web Domain Dataset (1996-2010) Host Link Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
 
 In partnership with
 -------------------
