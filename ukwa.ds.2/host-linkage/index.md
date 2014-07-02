@@ -44,11 +44,15 @@ This subset of the data has also been [made available for download](http://www.w
 Issues
 ------
 
-Be aware that the web archives from which this data was derived had different deduplication methods applied to it in different years. As a result, the single resource in the archive which gives rise to:
+There are a number of issues that one should be aware of when attempting to interpret this dataset.
+
+### Crawler configuration ###
+
+Be aware that the web archives from which this data was derived had [different crawl techniques applied to it in different years]({{ site.baseurl }}/ukwa.ds.2/#Issues). For example crawl de-duplication means that the single resource in the archive which gives rise to:
  
     2008|host1.co.uk|host2.co.uk|1
  
-may not show in this data as
+may not show up in the 2009 data as
  
     2009|host1.co.uk|host2.co.uk|1
  
@@ -61,10 +65,7 @@ Similarly, the difference between the following two statements may be accounted 
  
 There may still be 100 linking resources in 2009, but 99 of them may be unchanged and thus absent from this dataset.
 
-Characteristics
----------------
-
-Some preliminary investigations revealed some overall characteristics of this data set that one should be aware of when attempting to exploit it and intrepret the results. 
+### Link farms ###
 
 The following diagram shows the total number of known pairs of linked hosts for each year ([also available as CSV data here](distinct-host-host-links.csv)). 
 
