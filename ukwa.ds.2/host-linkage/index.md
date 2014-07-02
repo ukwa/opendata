@@ -48,7 +48,7 @@ There are a number of issues that one should be aware of when attempting to inte
 
 ### Crawler configuration ###
 
-Be aware that the web archives from which this data was derived had [different crawl techniques applied to it in different years]({{ site.baseurl }}/ukwa.ds.2/#Issues). For example crawl de-duplication means that the single resource in the archive which gives rise to:
+Be aware that the web archives from which this data was derived had [different crawl techniques applied to it in different years]({{ site.baseurl }}/ukwa.ds.2/#issues). For example crawl de-duplication means that the single resource in the archive which gives rise to:
  
     2008|host1.co.uk|host2.co.uk|1
  

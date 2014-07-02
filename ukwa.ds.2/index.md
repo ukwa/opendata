@@ -10,7 +10,7 @@ It is composed of 470466 files, mostly arc.gz, with 4494 warc.gz. Total size: 32
 
 This dataset cannot be made generally available, but can be used to generate secondary datasets, and these can be made available under open license terms.
 
-Before interpreting results from this dataset, or any secondary datasets based upon it, please refer to the [known issues with this dataset][#Issues] (below).
+Before interpreting results from this dataset, or any secondary datasets based upon it, please refer to the [known issues with this dataset][#issues] (below).
 
 Secondary datasets
 ------------------
@@ -18,14 +18,6 @@ Secondary datasets
 * [JISC UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
 * [JISC UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
 * [JISC UK Web Domain Dataset (1996-2010) Host Link Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
-
-{% include cite_doi.md %}
-
-In partnership with
--------------------
-
-[<img src="{{ site.baseurl }}/images/jisc-logo-sml.png"/>](http://www.jisc.ac.uk/)
-[<img src="{{ site.baseurl }}/images/ia-logo-sml.png"/>](http://www.archive.org/)
 
 
 Issues
@@ -57,4 +49,11 @@ The extracted data contains all captures of .uk in the Archive (for the given ti
  
 Also, after extracting all these (W)ARCs, we generated WAT files to find embedded resources not belonging to .uk to be included for extraction as well. A second round of extraction copied over these embedded resources.
 
+{% include cite_doi.md %}
+
+In partnership with
+-------------------
+
+[<img src="{{ site.baseurl }}/images/jisc-logo-sml.png"/>](http://www.jisc.ac.uk/)
+[<img src="{{ site.baseurl }}/images/ia-logo-sml.png"/>](http://www.archive.org/)
 
