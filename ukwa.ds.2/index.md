@@ -32,9 +32,9 @@ The Internet Archive (IA) web collection comes from crawls run by the IA Web Gro
 
 ### Crawl Policies ###
 
-This range of sources means that comprehensive documentation of the crawl configuration for all crawls is not available. Each of these archiving initiatives has its own crawling policies with regard to revisits, de-duplication, maximum resource or crawl size, etc. For example, the IA Web Group generally imposes a file size limit of 100 MB on records for some partner crawls, and so large objects may be under-represented in the dataset.
+This range of sources means that comprehensive documentation of the crawl configuration for all crawls is not available. Each of these archiving initiatives has its own crawling policies with regard to revisits, de-duplication, maximum resource or crawl size, etc. For example, the IA Web Group generally imposes a file size limit of 100 MB on records for some partner crawls, and so large objects may be under-represented in the dataset. Indeed, in some cases, [this resource size limit may be as low as 10MB](https://archive.org/about/faqs.php#18).
 
-A significant portion of the data, particularly from the earliest years, comes from [Alexa](http://www.alexa.com/). IA have no visibility into how this data is crawled, except to say that since 2008 this dataset is text only (no images, videos etc.). Note that the Alexa data is embargoed for a period of 6 months, after which IA are able to ingest it into our repositories and make it available via the Wayback Machine.
+A significant portion of the data, particularly from the earliest years, comes from [Alexa](http://www.alexa.com/). IA have no visibility into how this data is crawled, except to say that since 2008 this dataset is text only (no images, videos etc.). Note that the Alexa data is embargoed for a period of 6 months, after which IA are able to ingest it into their repositories and make it available via the Wayback Machine.
 
 Before 2008, IA only used the ARC format, although some crawls may have used early forms of de-duplication even before the WARC format provided a standard way to supporting revisit events.
 
