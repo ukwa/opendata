@@ -6,6 +6,8 @@ doi: 10.5259/ukwa.ds.2/cdx/1
 
 In order to enable access to web archives, we use [CDX files](https://archive.org/web/researcher/cdx_file_format.php) to act as indexes so that we can look up which ARC or WARC files contain which URLs and responses. 
 
+The original CDX files were generated for us by the Internet Archive, with one CDX file for each ARC or WARC file. This makes it easy for us to manage those files, but it not very convenient for researchers to have to download and deal with over half a million small separate files. Therefore, we have processed those CDX files and collected them together into separate CDX files per year of crawling activity. Please note that the individual CDX files are not sorted.
+
 Schema
 ------
 
@@ -48,6 +50,7 @@ Download
 --------
 
 This large dataset cannot be hosted on GitHub. It can be downloaded from [here](http://www.webarchive.org.uk/datasets/ukwa.ds.2/cdx/) instead, as compressed files containing the CDX data for each year of crawler activity.
+
 
 {% include cite_doi.md %}
 
