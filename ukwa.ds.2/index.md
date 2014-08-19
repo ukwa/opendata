@@ -1,12 +1,12 @@
 ---
 layout: bootstrap
-title: JISC UK Web Domain Dataset (1996-2010)
+title: JISC UK Web Domain Dataset (1996-2013)
 doi: 10.5259/ukwa.ds.2/1
 ---
 
-In partnership with the [Internet Archive](http://www.archive.org/) and [JISC](http://www.jisc.ac.uk/), we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The JISC UK Web Domain Dataset (1996-2010) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
+In partnership with the [Internet Archive](http://www.archive.org/) and [JISC](http://www.jisc.ac.uk/), we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The JISC UK Web Domain Dataset (1996-2013) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
 
-It is composed of 470,466 files, mostly arc.gz, with 4,494 warc.gz files. Total size is 32TB, averaging 71 MB per archive file (WARC files tend to be larger than ARC files), but this is very variable because the crawler does not split resources across archives.
+The collection was deposited with us in two separate traches. The 1996-2010 tranch is composed of 470,466 files, mostly arc.gz, with 4,494 warc.gz files, and the total size is 32TB. The 2011-2013 tranch runs up to April of 2013 (i.e. until the enaction of the UK's Non-Print Legal Deposit legislation), is composed of 67,834 files (24,060 warc.gz files) with a total size of 26TB.
 
 This dataset cannot be made generally available here, but can be used to generate secondary datasets, and these can be made available under open license terms.
 
@@ -18,6 +18,7 @@ Secondary datasets
 * [JISC UK Web Domain Dataset (1996-2010) Format Profile]({{ site.baseurl }}/ukwa.ds.2/fmt)
 * [JISC UK Web Domain Dataset (1996-2010) Geoindex]({{ site.baseurl }}/ukwa.ds.2/geo)
 * [JISC UK Web Domain Dataset (1996-2010) Host Link Graph]({{ site.baseurl }}/ukwa.ds.2/host-linkage)
+* [JISC UK Web Domain Dataset (1996-2013) Crawled URL Index]({{ site.baseurl }}/ukwa.ds.2/cdx)
 
 {% include cite_doi.md %}
 

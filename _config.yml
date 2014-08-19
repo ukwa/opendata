@@ -2,3 +2,10 @@ exclude: [geoindex-1, tests]
 baseurl: /opendata
 breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "bootstrap"
