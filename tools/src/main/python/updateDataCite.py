@@ -15,8 +15,8 @@ body_unicode = codecs.open("doi.resolve", 'r', encoding='utf-8').read().strip()
 doi = body_unicode.split("\n")[0].split("=")[1].strip()
 
 # Test mode?
-#test_mode = ""
-test_mode = "?testMode=true"
+test_mode = ""
+#test_mode = "?testMode=true"
 
 # Check if the DOI already exists, and modify update method accordingly:
 url = 'https://mds.datacite.org/doi/' + doi + test_mode
