@@ -33,7 +33,7 @@ The Internet Archive (IA) web collection comes from crawls run by the IA Web Gro
 
 ### Crawl Policies ###
 
-This range of sources means that comprehensive documentation of the crawl configuration for all crawls is not available. Each of these archiving initiatives has its own crawling policies with regard to revisits, de-duplication, maximum resource or crawl size, etc. For example, the IA Web Group generally imposes a file size limit of 100 MB on records for some partner crawls, and so large objects may be under-represented in the dataset. Indeed, in some cases, [this resource size limit may be as low as 10MB](https://archive.org/about/faqs.php#18).
+This range of sources means that comprehensive documentation of the crawl configuration for all crawls is not available. Each of these archiving initiatives has its own crawling policies with regard to revisits, de-duplication, maximum resource or crawl size, etc. For example, the IA Web Group generally imposes a file size limit of 100 MB on records for some partner crawls, and so large objects may be under-represented in the dataset. Indeed, in some cases, [this resource size limit may be as low as 10MB](http://webarchive.loc.gov/all/20110813043651/http://www.archive.org/about/faqs.php#18). In general, these crawls obeyed robots.txt, and so many sites may be missing or patchy for that reason. Also, as robots.txt files are usually written with search crawlers in mind, they often block non-textual resources like embedded images or stylesheets, biasing the collection towards textual and HTML resources.
 
 A significant portion of the data, particularly from the earliest years, comes from [Alexa](http://www.alexa.com/). IA have no visibility into how this data is crawled, except to say that since 2008 this dataset is text only (no images, videos etc.). Note that the Alexa data is embargoed for a period of 6 months, after which IA are able to ingest it into their repositories and make it available via the Wayback Machine.
 
@@ -42,6 +42,8 @@ Before 2008, IA only used the ARC format, although some crawls may have used ear
 In 2008, IA started to write data into WARC files, while continuing to write ARC files for some more time as well. Again, this was just the Web Group’s policy and the Web Wide crawls run by IA. Other donating institutions may have still been writing ARC files and donating them.
 
 Since 2008, de-duplication was turned on in some select cases. Also, it would be turned off depending on the partner’s needs, or the start of a new calendar year etc. De-duplication was not imposed on a Web Wide scale, but was limited to smaller collections that were being crawled on a regular basis.
+
+Like most web archives, the limitations of the crawling process mean that highly dynamic or form-driven sites will not be archived completely. Embedded objects like Flash, Java Applets, video and audio files and so on will generally not be archived correctly. Also, most web crawlers follow long chains of links from their initial starting points, and so the regularity with which sites are visited is driven largely by how many links refer to them, rather than being an explicit curatorial request.
  
 ### Extraction ###
 
