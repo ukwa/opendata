@@ -4,13 +4,13 @@ UK Web Domain Dataset (1996-2010) Geoindex
 The structure of the data
 -------------------------
 
-Each individual line of data captures the appearence of a given postcode on a given archived web page, as it was seen by a web crawler that visited at a particular time. Note that each combination of postcode, URL and timestamp only appears once, no matter how many times that particular postcode appears in the given page.
+Each individual line of data captures the appearence of a given postcode on a given archived web page, as it was seen by a web crawler, visited at a particular time. Note that each combination of postcode, URL and timestamp only appears once, no matter how many times that particular postcode appears in the given page.
 
 The layout of the data is as follows:
 
-> {crawl-timestamp}/{url} _tab_ {postcode}
+> {crawl-timestamp}/{url} {postcode}
 
-i.e. timestamp and the URL are separated by a `/`, and then a tab character separates that from the postcode itself.
+i.e. timestamp and the URL are separated by a `/`, and then a _tab character_ separates that from the postcode itself.
 
 <pre>
 20080509162138/http://uk.eurogate.co.uk/contact_us	IG8 8HD
@@ -20,8 +20,8 @@ i.e. timestamp and the URL are separated by a `/`, and then a tab character sepa
 </pre>
 
 This format is not ideal but can be post-processed to link to elsewhere, e.g. prefix the first column 
-with http://wayback.archive.org/web/ and you'll get to IAs version. Or change the postcode into the OS
-linked data form, like http://data.ordnancesurvey.co.uk/doc/postcodeunit/SO164GU
+with `http://wayback.archive.org/web/{crawl-timestamp}/{url}` and you'll get to IAs version. Or change the postcode into the OS
+linked data form, like <http://data.ordnancesurvey.co.uk/doc/postcodeunit/SO164GU>
 
 
 How the data was created
