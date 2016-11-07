@@ -19,10 +19,11 @@ i.e. timestamp and the URL are separated by a `/`, and then a _tab character_ se
 20080509162252/http://triton-technology.co.uk/php/	NG12 5AW
 </pre>
 
-This format is not ideal but can be post-processed to link to elsewhere, e.g. prefix the first column 
-with `http://wayback.archive.org/web/{crawl-timestamp}/{url}` and you'll get to IAs version. Or change the postcode into the OS
-linked data form, like <http://data.ordnancesurvey.co.uk/doc/postcodeunit/SO164GU>
+This format is not ideal, but can be parsed fairly easily. For example, by extracting the first column and adding a prefix 
+of `http://wayback.archive.org/web/` (i.e. use the form `http://wayback.archive.org/web/{crawl-timestamp}/{url}`) you'll get to the Internet Archive's copy of that page (unless it's blocked by `robots.txt`). Similarly, you can extract the postcode and change to the OS linked-data form, like this: <http://data.ordnancesurvey.co.uk/doc/postcodeunit/SO164GU>
 
+
+Unfortunately, at the current time, we've only been able to extract this data for the 1996-2010 chunk of the underlying dataset. We intend to extend this analysis to the remaining years, but are not able to dedicate resources to doing so at the current time.
 
 How the data was created
 ------------------------
