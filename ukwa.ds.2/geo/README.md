@@ -1,16 +1,16 @@
 UK Web Domain Dataset (1996-2010) Geoindex
 ==========================================
 
-What does work is the RegEx-based indexer. You can run it like this
+The structure of the data
+-------------------------
 
-<pre>
-hadoop jar EntityIndexer-0.0.1-SNAPSHOT-job.jar uk.bl.wap.hadoop.regex.WARCRegexIndexer ia.archives.job.1 postcodes "[A-Z]{1,2}[0-9R][0-9A-Z]? [0-9][ABD-HJLNP-UW-Z]{2}"
-</pre>
-  
-And it will go through the arc.gz or warc.gz files listed in ia.archive.job.1, extract all references to postcodes (using that generic RegEx), and list them to text files under the postcodes directory. 
+Each individual line of data captures the appearence of a given postcode on a given archived web page, as it was seen by a web crawler that visited at a particular time. Note that each combination of postcode, URL and timestamp only appears once, no matter how many times that particular postcode appears in the given page.
 
+The layout of the data is as follows:
 
-They look like this:
+> {crawl-timestamp}/{url} _tab_ {postcode}
+
+i.e. timestamp and the URL are separated by a `/`, and then a tab character separates that from the postcode itself.
 
 <pre>
 20080509162138/http://uk.eurogate.co.uk/contact_us	IG8 8HD
@@ -19,9 +19,23 @@ They look like this:
 20080509162252/http://triton-technology.co.uk/php/	NG12 5AW
 </pre>
 
-This can then be post-processed to link to elsewhere, e.g. prefix the first column 
+This format is not ideal but can be post-processed to link to elsewhere, e.g. prefix the first column 
 with http://wayback.archive.org/web/ and you'll get to IAs version. Or change the postcode into the OS
 linked data form, like http://data.ordnancesurvey.co.uk/doc/postcodeunit/SO164GU
+
+
+How the data was created
+------------------------
+
+This was powered by the regular-expression-based [WARCRegexIndexer](https://github.com/ukwa/webarchive-discovery/blob/master/warc-hadoop-indexer/src/main/java/uk/bl/wa/hadoop/regex/WARCRegexIndexer.java). It was run like this:
+
+<pre>
+hadoop jar EntityIndexer-0.0.1-SNAPSHOT-job.jar uk.bl.wap.hadoop.regex.WARCRegexIndexer ia.archives.job.1 postcodes "[A-Z]{1,2}[0-9R][0-9A-Z]? [0-9][ABD-HJLNP-UW-Z]{2}"
+</pre>
+  
+This job goes through the arc.gz or warc.gz files listed in ia.archive.job.1, extract all references to postcodes (using that generic RegEx), and list them to text files under the postcodes directory. 
+
+The lists from separate runs were then combined into a set of separate files based on postcode prefix.
 
 
 License
