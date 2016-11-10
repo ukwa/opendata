@@ -25,6 +25,13 @@ of `http://wayback.archive.org/web/` (i.e. use the form `http://wayback.archive.
 
 Unfortunately, at the current time, we've only been able to extract this data for the 1996-2010 chunk of the underlying dataset. We intend to extend this analysis to the remaining years, but are not able to dedicate resources to doing so at the current time.
 
+How the data is packaged
+------------------------
+
+The dataset 'homepage' is [here](http://data.webarchive.org.uk/opendata/ukwa.ds.2/geo/), and the data itself can be downloaded from: <https://www.webarchive.org.uk/datasets/ukwa.ds.2/geo/>
+
+To attempt to make the dataset more manageable, we've broken it down into separate files which can be downloaded individually, e.g. `postcode-aa.tsv.bz2`. Note that the `aa` does not mean anything - it's just a way of breaking the full dataset up into chunks. There's also a summary file (`summary-count-year-postcode.tsv.gz`) that contains overall statistics, and a `manifest.sha1` that can be used to validate that the data has been downloaded correctly.
+
 How the data was created
 ------------------------
 
