@@ -1,5 +1,36 @@
 import httplib2, sys, base64, codecs
- 
+import requests, sys, codecs
+
+
+def create_md():
+  """Create metadata record"""
+
+  #endpoint = 'https://mds.datacite.org/metadata'
+  endpoint = 'https://mds.test.datacite.org/metadata'
+  if (len(sys.argv) < 4):
+    raise Exception('Please provide username, password and location of metadata file')
+    username, password, filename = sys.argv[1:]
+    metadata = codecs.open(filename, 'r', encoding='utf-8').read()
+    response = requests.post(endpoint,
+      auth = (username, password),
+      data = metadata.encode('utf-8'),
+      headers = {'Content-Type':'application/xml;charset=UTF-8'})
+    print str(response.status_code) + " " + response.text
+
+
+  #endpoint = 'https://mds.datacite.org/doi'
+  endpoint = 'https://mds.test.datacite.org/doi'
+  if (len(sys.argv) < 4):
+    raise Exception('Please provide username, password, location of doi-url file')
+    username, password, filename = sys.argv[1:]
+    file = codecs.open(sys.argv[3], 'r', encoding='utf-8').read().strip()
+    response = requests.put(endpoint,
+      auth = (username, password),
+      data = file.encode('utf-8'),
+      headers = {'Content-Type':'text/plain;charset=UTF-8'})
+    print str(response.status_code) + " " + response.text
+
+
 if (len(sys.argv) < 2):
     raise Exception('Please provide username and password')
 
