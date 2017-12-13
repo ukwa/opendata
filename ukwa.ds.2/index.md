@@ -6,7 +6,7 @@ doi: 10.5259/ukwa.ds.2/1
 
 In partnership with the [Internet Archive](http://www.archive.org/) and [JISC](http://www.jisc.ac.uk/), we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The JISC UK Web Domain Dataset (1996-2013) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
 
-The collection was deposited with us in two separate traches. The 1996-2010 tranch is composed of 470,466 files, mostly arc.gz, with 4,494 warc.gz files, and the total size is 32TB. The 2011-2013 tranch runs up to April of 2013 (i.e. until the enaction of the UK's Non-Print Legal Deposit legislation), is composed of 67,834 files (24,060 warc.gz files) with a total size of 26TB. The first version of this dataset corresponded to the first tranch, whereas the current version of the dataset includes both tranches.
+The collection was deposited with us in two separate traches. The 1996-2010 tranch is composed of 470,466 files (mostly arc.gz) and the total size is 32TB. The 2011-2013 tranch runs up to April of 2013 (i.e. until the enaction of the UK's Non-Print Legal Deposit legislation), is composed of 203,502 files with a total size of 30TB. The first version of this dataset corresponded to the first tranch, whereas the current version of the dataset includes both tranches.
 
 This dataset cannot be made generally available here, but can be used to generate secondary datasets, and these can be made available under open license terms.
 
@@ -47,9 +47,27 @@ Like most web archives, the limitations of the crawling process mean that highly
  
 ### Extraction ###
 
-The extracted data contains all captures of .uk in the Internet Archive Web collection (for the given time range). A capture stored in an ARC file was extracted into an ARC file, while a capture that was stored in a WARC file was extracted into a WARC file. No limits on resource sizes were placed in the extraction. 
+The extracted data contains all captures of .uk resources in the Internet Archive Web collection (for the given time range). A capture stored in an ARC file was extracted into an ARC file, while a capture that was stored in a WARC file was extracted into a WARC file. No limits on resource sizes were placed in the extraction. 
  
-Also, after extracting all these (W)ARCs, IA generated WAT files to find embedded resources (as identified by the original crawl process) not belonging to .uk to be included for extraction as well. A second round of extraction added these embedded resources to this dataset.
+After extracting all these (W)ARCs for the period 1996 to 2010, IA generated WAT files to find embedded resources (as identified by the original crawl process) not belonging to .uk to be included for extraction as well. A second round of extraction added these embedded resources to this dataset.
+
+Later, the process was repeated for the 2011 to April 2013 tranche of data. In this case, the the whole of the extraction were performed at once, so this data is not split by phase.
+
+### Summary Statistics ###
+
+Tranche 2011-201304 contains 203,502 blobs, 30,036,052,322,986 bytes  (24,060 warc.gz files)
+
+Tranche 1996-2010 contains 4,494 warc.gz files, ...
+
+
+### Data Quality Problems ###
+
+Tranche 2011-201304 appears to contain an accidentally truncated WARC.GZ file:
+
+    2011-201304/part-04/warcs/DOTUK-HISTORICAL-2011-201304-WARCS-PART-00072-801000-000000.warc.gz
+    
+If you attempt to use this file, you'll get a *Unexpected end of ZLIB input stream* error. Based on the MD5 hashes inventory on the original drives, this file appears to be exactly as it was supplied to us.
+
 
 In partnership with
 -------------------
