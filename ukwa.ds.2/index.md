@@ -66,7 +66,7 @@ Tranche 2011-201304 appears to contain an accidentally truncated WARC.GZ file:
 
     2011-201304/part-04/warcs/DOTUK-HISTORICAL-2011-201304-WARCS-PART-00072-801000-000000.warc.gz
     
-If you attempt to use this file, you'll get a *Unexpected end of ZLIB input stream* error. Based on the MD5 hashes inventory on the original drives, this file appears to be exactly as it was supplied to us.
+If you attempt to use this file, you'll get a *Unexpected end of ZLIB input stream* error. Based on the MD5 hash inventory on the original drives, this file appears to be exactly as it was supplied to us.
 
 
 In partnership with

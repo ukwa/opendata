@@ -9,6 +9,9 @@ The ~2.5 billion 200 OK responses in the (1996-2010) tranch of the [JISC UK Web 
 
 The geoindex is composed of some 700,641,549 lines of TSV data, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode. Uncompressed, this is a total of 61 GB of text, and so care should be taken before downloading or attempting to use this data set.
 
+2011-201304 warcs 1.4GB per file, arcs 350 MB per file, 50 files.
+
+
 Download
 --------
 

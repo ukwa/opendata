@@ -10,3 +10,6 @@
 
 # OS X Metadata
 .DS_Store
+
+# .dat metadata
+.dat
