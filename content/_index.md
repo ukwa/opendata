@@ -2,7 +2,7 @@
 layout: bootstrap
 title: UK Web Archive Open Data
 ---
-<img src="{{ site.baseurl }}/images/ukwa-logo-150.png" style="float:right;"/>
+<img src="/images/ukwa-logo-150.png" style="float:right;"/>
 
 In order to facilitate research, and so we might better understand and preserve the UK's web history, the UK Web Archive has decided to make a number of data and API services available for general use. We also make a few example tools available, showing how the open data might be used, and these are hosted in this GitHub repository.
 

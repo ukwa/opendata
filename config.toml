@@ -1,0 +1,21 @@
+baseURL = "http://data.webarchive.org.uk/"
+languageCode = "en-gb"
+title = "UK Web Archive Data Site"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+[params]
+  editURL = "https://github.com/ukwa/opendata/edit/master/content/"
+  description = "Documentation Woo"
+  author = "UKWA WWOO"
+  showVisitedLinks = false
+  themeVariant = "blue"
+
+ignoreFiles = [ "\\.ad$" ]
+
+
+# For search functionnality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
