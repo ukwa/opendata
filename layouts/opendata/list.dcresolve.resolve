@@ -1,0 +1,2 @@
+doi={{ .Params.doi }}
+url={{ .Permalink }}

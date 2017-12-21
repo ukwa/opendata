@@ -1,0 +1,62 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<footer class=" footline" >
+	{{with .Params.LastModifierDisplayName}}
+	    <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
+	    </div>
+	{{end}}
+</footer>
+
+<h2>Citing this dataset</h2>
+
+<p>
+If you do wish to cite this dataset, please this DOI: <b>{{ .Params.doi }}</b>
+</p>
+<p>
+<a class="btn btn-default" href="http://dx.doi.org/{{ .Params.doi }}">{{ .Params.doi }}</a>
+</p>
+
+<table>
+  <tr>
+    <th>Option</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>data</td>
+    <td>path to data files to supply the data that will be passed into templates.</td>
+  </tr>
+  <tr>
+    <td>engine</td>
+    <td>engine to be used for processing templates. Handlebars is the default.</td>
+  </tr>
+  <tr>
+    <td>ext</td>
+    <td>extension to be used for dest files.</td>
+  </tr>
+</table>
+
+{{ range .AlternativeOutputFormats -}}
+<a rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">{{ .MediaType.Type }}</a><br/>
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ end -}}
+
+License
+-------
+
+<p xmlns:dct="http://purl.org/dc/terms/">
+  <a rel="license" style="float:right" 
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="{{ site.baseurl }}/">
+    <span property="dct:title">The UK Web Archive</span></a>
+  have waived all copyright and related or neighboring rights to the
+  <span property="dct:title">{{ page.subtitle }} {{ page.title }}</span> (<a href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>).
+</p>
+
+
+{{ partial "footer.html" . }}

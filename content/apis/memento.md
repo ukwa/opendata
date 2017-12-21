@@ -1,5 +1,4 @@
 ---
-layout: bootstrap
 title: Memento
 ---
 

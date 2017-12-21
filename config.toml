@@ -10,7 +10,7 @@ theme = "hugo-theme-learn"
   description = "Documentation Woo"
   author = "UKWA WWOO"
   showVisitedLinks = false
-  themeVariant = "blue"
+  themeVariant = "ukwa"
 
 ignoreFiles = [ "\\.ad$" ]
 
@@ -18,4 +18,42 @@ ignoreFiles = [ "\\.ad$" ]
 # For search functionnality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[mediaTypes]
+  [mediaTypes."application/xml-datacite"]
+  suffix = "xml"
+  [mediaTypes."application/x-datacite-resolve"]
+  suffix = "resolve"
+
+[outputFormats]
+  [outputFormats.DCXML]
+  mediaType = "application/xml-datacite"
+  baseName = "datacite"
+  isPlainText = true
+  [outputFormats.DCRESOLVE]
+  mediaType = "application/x-datacite-resolve"
+  baseName = "datacite"
+  isPlainText = true
+
+[[menu.shortcuts]] 
+name = "<i class='fa fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-camera'></i> Showcases"
+url = "/showcase"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
 
