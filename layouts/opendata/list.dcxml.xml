@@ -11,12 +11,14 @@
  <titles>
     <title>{{ .Params.title }}</title>
  </titles>
+{{- if .Params.contributors -}}
 {{- range where .Params.contributors "role" "publisher"}}
  <publisher>{{ .title }}</publisher>
 {{- end }}
+{{- end }}
  <publicationYear>{{ .Date.Format "2006" }}</publicationYear>
-{{- if .Params.isderivedfrom }}
- <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDerivedFrom">{{ .Params.isderivedfrom }}</relatedIdentifier>
+{{- if .Params.isDerivedFrom }}
+ <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDerivedFrom">{{ .Params.isDerivedFrom }}</relatedIdentifier>
 {{- end }}
  <rightsList>
 {{- range .Params.licenses }}

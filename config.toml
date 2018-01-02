@@ -1,9 +1,12 @@
-baseURL = "http://data.webarchive.org.uk/"
+#baseURL = "http://data.webarchive.org.uk/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-gb"
 title = "UK Web Archive Data Site"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
+
+canonifyURLs = true
 
 [params]
   editURL = "https://github.com/ukwa/opendata/edit/master/content/"

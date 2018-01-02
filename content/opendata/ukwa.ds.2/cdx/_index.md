@@ -2,6 +2,24 @@
 title: Crawled URL Index
 subtitle: JISC UK Web Domain Dataset (1996-2013)
 doi: 10.5259/ukwa.ds.2/cdx/1
+date: 2014-09-19
+version: 1
+isderivedfrom: 10.5259/ukwa.ds.1/1
+contributors:
+- title: The UK Web Archive
+  email: web-archivist@bl.uk
+  path: https://www.webarchive.org.uk/
+  role: publisher
+licenses:
+- title: Public Domain Dedication
+  path: https://creativecommons.org/publicdomain/zero/1.0/
+- title: Open Access
+  path: info:eu-repo/semantics/openAccess
+resources:
+- title: "UK Selective Web Archive Classification Dataset"
+  path: ./data/classification.tsv
+  format: tsv
+  mediatype: text/tsv
 outputs:
 - html
 - dcxml

@@ -9,6 +9,10 @@
 	{{end}}
 </footer>
 
+CHEESE
+
+{{ if .Params.doi }}
+
 <h2>Citing this dataset</h2>
 
 <p>
@@ -42,8 +46,7 @@ If you do wish to cite this dataset, please this DOI: <b>{{ .Params.doi }}</b>
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
 
-License
--------
+<h2>License</h2>
 
 <p xmlns:dct="http://purl.org/dc/terms/">
   <a rel="license" style="float:right" 
@@ -51,12 +54,13 @@ License
     <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
   </a>
   To the extent possible under law,
-  <a rel="dct:publisher"
-     href="{{ site.baseurl }}/">
+  <a rel="dct:publisher" href="https://www.webarchive.org.uk/">
     <span property="dct:title">The UK Web Archive</span></a>
   have waived all copyright and related or neighboring rights to the
-  <span property="dct:title">{{ page.subtitle }} {{ page.title }}</span> (<a href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>).
+  <span property="dct:title">{{ .Params.subtitle }} {{ .Params.title }}</span> 
+  (<a href="http://dx.doi.org/{{ .Params.doi }}">{{ .Params.doi }}B</a>).
 </p>
 
+{{ end }}
 
 {{ partial "footer.html" . }}
