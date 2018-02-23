@@ -3,6 +3,8 @@ layout: bootstrap
 title: Geoindex
 subtitle: JISC UK Web Domain Dataset (1996-2010)
 doi: 10.5259/ukwa.ds.2/geo/1
+creators: Andrew N. Jackson
+year: 2017
 ---
 
 The ~2.5 billion 200 OK responses in the (1996-2010) tranch of the [JISC UK Web Domain Dataset]({{ site.baseurl }}/ukwa.ds.2/) dataset have been scanned for geographic references - specifically postcodes. This set of postcode citations, found at particular URLs, crawled at particular times, forms an historical geoindex of the UK web. For more details about how the data was created, its format, and how to use it, see [here](https://github.com/ukwa/opendata/tree/gh-pages/ukwa.ds.2/geo).

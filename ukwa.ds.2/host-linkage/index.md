@@ -3,6 +3,8 @@ layout: bootstrap
 title: Host Link Graph
 subtitle: JISC UK Web Domain Dataset (1996-2010)
 doi: 10.5259/ukwa.ds.2/host.linkage/1
+creators: Andrew N. Jackson
+year: 2013
 ---
 
 The ~2.5 billion 200 OK responses from the 1996-2010 tranch of the [JISC UK Web Domain Dataset]({{ site.baseurl }}/ukwa.ds.2/) dataset have been scanned for hyperlinks. For each link, we extract the host that the link targets, and use this to build up a picture of which hosts have linked to which other hosts, over time.
