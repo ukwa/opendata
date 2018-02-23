@@ -2,6 +2,9 @@
 layout: bootstrap
 title: JISC UK Web Domain Dataset (1996-2013)
 doi: 10.5259/ukwa.ds.2/1
+creators: JISC and the Internet Archive
+year: 2013
+publisher: UK Web Archive
 ---
 
 In partnership with the [Internet Archive](http://www.archive.org/) and [JISC](http://www.jisc.ac.uk/), we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The JISC UK Web Domain Dataset (1996-2013) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
