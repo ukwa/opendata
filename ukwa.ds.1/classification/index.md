@@ -3,6 +3,8 @@ layout: bootstrap
 title: Website Classification Dataset
 subtitle: UK Selective Web Archive
 doi: 10.5259/ukwa.ds.1/classification/1
+creators: The UK Web Archive Project Partners
+year: 2013
 ---
 
 The entire [selective archive]({{ site.baseurl }}/ukwa.ds.1/) is manually curated, including classification of sites into a two-tiered subject hierarchy. We have made this manually-generated classification information available as an [open dataset, in tab-separated column format]({{ site.baseurl }}/ukwa.ds.1/classification/classification.tsv). The structure of the data is as follows:

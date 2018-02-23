@@ -2,6 +2,8 @@
 title: Crawled URL Index
 subtitle: JISC UK Web Domain Dataset (1996-2013)
 doi: 10.5259/ukwa.ds.2/cdx/1
+creators: The Internet Archive
+year: 2013
 ---
 
 In order to enable access to web archives, we use [CDX files](https://archive.org/web/researcher/cdx_file_format.php) to act as indexes so that we can look up which ARC or WARC files contain which URLs and responses. 
