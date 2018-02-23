@@ -3,7 +3,7 @@ layout: bootstrap
 title: Website Classification Dataset
 subtitle: UK Selective Web Archive
 doi: 10.5259/ukwa.ds.1/classification/1
-creators: The UK Web Archive Project Partners
+creators: The UK Web Archive & Partners
 year: 2013
 ---
 
