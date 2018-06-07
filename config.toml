@@ -1,7 +1,17 @@
-#baseURL = "http://data.webarchive.org.uk/"
 baseURL = "/"
-languageCode = "en-gb"
-title = "UK Web Archive Data Site"
+languageCode = "en-GB"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    title = "UK Web Archive Data Site"
+    weight = 1
+    languageName = "English"
+  [languages.cy]
+    title = "UK Web Archive Data Site Welsh"
+    weight = 2
+    languageName = "Welsh"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -18,10 +28,11 @@ canonifyURLs = true
 ignoreFiles = [ "\\.ad$" ]
 
 
-# For search functionnality
+# For search functionnality: JSON
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+# Additional formats to build DataCite files:
 [mediaTypes]
   [mediaTypes."application/xml-datacite"]
   suffix = "xml"
@@ -38,25 +49,22 @@ home = [ "HTML", "RSS", "JSON"]
   baseName = "datacite"
   isPlainText = true
 
-[[menu.shortcuts]] 
-name = "<i class='fa fa-github'></i> Github repo"
-identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
-weight = 10
-
+# The Menu
 [[menu.shortcuts]]
-name = "<i class='fa fa-camera'></i> Showcases"
-url = "/showcase"
-weight = 11
-
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
+name = "<i class='fa fa-bookmark'></i> UKWA Homepage"
+identifier = "ukwa"
+url = "https://www.webarchive.org.uk/"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> Credits"
-url = "/credits"
+name = "<i class='fa fa-twitter'></i> @UKWebArchive"
+identifier = "ukwa-twitter"
+url = "https://twitter.com/UKWebArchive"
 weight = 30
+
+[[menu.shortcuts]] 
+name = "<i class='fa fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/ukwa/opendata"
+weight = 10
 
