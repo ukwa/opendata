@@ -1,0 +1,38 @@
+<script type="application/ld+json">
+{{- $url := .Permalink -}}
+{
+  "@context":"http://schema.org/",
+  "@type":"Dataset",
+  "name":"{{ .Params.title }}",
+  "description":"{{ .Params.description }}",
+  "url":"{{ .Permalink }}",
+  "sameAs":"https://dx.doi.org/{{ .Params.doi }}",
+  "url":"{{ $url }}",
+  {{- range .Params.contributors }}
+  "creator":{
+     "@type":"Organization",
+     "url": "{{ .path }}",
+     "name":"{{ .title }}",
+     "contactPoint":{
+        "@type":"ContactPoint",
+        "email":"{{ .email }}"
+     }
+  },
+  {{- end }}
+  "includedInDataCatalog":{
+     "@type":"DataCatalog",
+     "name":"data.webarchive.org.uk"
+  },
+{{- if .Params.resources }}
+  "distribution":[
+{{- range .Params.resources }}
+     {
+        "@type":"DataDownload",
+        "encodingFormat":"{{ .format }}",
+        "contentUrl":"{{ $url }}{{ .path }}"
+     },
+{{- end }}
+  ],
+{{- end }}
+}
+</script>
