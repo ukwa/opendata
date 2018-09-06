@@ -1,13 +1,13 @@
+{{ if .Params.resources -}}
 <script type="application/ld+json">
-{{- $url := .Permalink -}}
+{{ $url := .URL -}}
 {
   "@context":"http://schema.org/",
   "@type":"Dataset",
   "name":"{{ .Params.title }}",
   "description":"{{ .Params.description }}",
-  "url":"{{ .Permalink }}",
-  "sameAs":"https://dx.doi.org/{{ .Params.doi }}",
   "url":"{{ $url }}",
+  "sameAs":"https://dx.doi.org/{{ .Params.doi }}",
   {{- range .Params.contributors }}
   "creator":{
      "@type":"Organization",
@@ -23,7 +23,6 @@
      "@type":"DataCatalog",
      "name":"data.webarchive.org.uk"
   },
-{{- if .Params.resources }}
   "distribution":[
 {{- range .Params.resources }}
      {
@@ -32,7 +31,7 @@
         "contentUrl":"{{ $url }}{{ .path }}"
      },
 {{- end }}
-  ],
-{{- end }}
+  ]
 }
 </script>
+{{- end }}

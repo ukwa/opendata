@@ -19,9 +19,9 @@ theme = "hugo-theme-learn"
 canonifyURLs = true
 
 [params]
-  editURL = "https://github.com/ukwa/opendata/edit/master/content/"
-  description = "Documentation Woo"
-  author = "UKWA WWOO"
+  editURL = "https://github.com/ukwa/opendata/edit/hugo/content/"
+  description = "Documentation on the data sets and APIs offered by the UK Web Archive."
+  author = "The UK Web Archive and parters"
   showVisitedLinks = false
   themeVariant = "ukwa"
 
