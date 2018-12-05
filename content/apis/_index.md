@@ -4,49 +4,37 @@ pre: <b>2. </b>
 weight: 2
 ---
 
-TBA
-
-* http://inkdroid.org/journal/2012/05/03/way-way-back/
-
-
-
 
 APIs and Data Services
 --------------------------------
 
-Traditionally, the online presence of most archives, archives and museums have focussed on delivering access to individual items, directly to users, one by one. This is changing. As more items are either born digital or have excellent digital facsimiles, glam are beginning to offer data access and services in addition to simple direct use. This allows the communities we serve to build great things. 
+Traditionally, the online presence of most archives and museums have focussed on delivering access to individual items, directly to users, one by one. This is changing. As more items are either born digital or have excellent digital facsimiles, [GLAM](https://en.wikipedia.org/wiki/GLAM_(industry_sector)) are beginning to offer data access and services in addition to simple direct use. This allows the communities we serve to build great things. 
 
-One of the most successful examples is that of the National Library of Australia's [Trove](http://trove.nla.gov.au/) database, which provides [a rich API](http://trove.nla.gov.au/general/api), that allows [independent developers](http://wraggelabs.com/emporium/2012/04/the-new-api-powered-future/) to create all sorts of [generous interfaces](http://www.dancohen.org/2012/12/05/generous-interfaces-for-scholarly-sites/). Similarly, the British Library provides various [free data services](http://www.bl.uk/bibliographic/datafree.html) and the [National Archives of the UK has started offering direct API access to its discovery systems](http://discovery.nationalarchives.gov.uk/SearchUI/api.htm).
+One of the most successful examples is that of the National Library of Australia's [Trove](http://trove.nla.gov.au/) database, which provides [a rich API](http://trove.nla.gov.au/general/api), that allows [independent developers](http://wraggelabs.com/emporium/2012/04/the-new-api-powered-future/) to create all sorts of [generous interfaces](http://www.dancohen.org/2012/12/05/generous-interfaces-for-scholarly-sites/). Similarly, the British Library provides various [free data services](http://www.bl.uk/bibliographic/datafree.html) and the National Archives of the UK has started offering [direct API access](http://discovery.nationalarchives.gov.uk/SearchUI/api.htm) to its discovery systems.
 
-Web archives have also tended to focus on the playback of individual web pages, via the Wayback machine, and this is the way most users are used to interacting with our archives.
-However, for many years now, that same playback infrastructure has been used to develop other data and interfaces to the content. These APIs allow structured metadata about archival holdings to be retrieved programmatically, and in subsequent posts we'll explore how the Wayback queries and Memento protocols can be used to exploit web archives.
+Web archives have also tended to focus on the playback of individual web pages via Wayback machine instances, and this is the way most users are used to interacting with our archives.
+However, for many years now, that same playback infrastructure has been used to develop other data and interfaces to the content. These APIs allow structured metadata about archival holdings to be retrieved programmatically, and in [blog] (https://blogs.bl.uk/webarchive/) posts we hope to explore how the Wayback queries and Memento protocols can be used to exploit web archives.
 
-Alongside these online services, we've also been exploring the possibilities around making metadata datasets available for research and analysis. So far we're released an historical geoindex, a format profile, . We're also about to make further, even richer datasets available, based on the same 1996-2010 archive.
+Alongside these online services, we've also been exploring the possibilities around making metadata datasets available for research and analysis which we describe in these pages. 
+
 
 The Wayback API
 ------------------------
 
-Wayback query API is similar, but slightly more powerful, and slightly easier to integrate. Two types, if you have a URI of interest, holdings. Also a Memento version of that. However, the starts-with query let's you list and discover.
+The Wayback query API allows users to retrieve information about resources in Wayback instances. [Examples and Formats] (http://wwwoh-access.archive.org/wwwoh/waybackapi.htm)
 
-http://wwwoh-access.archive.org/wwwoh/waybackapi.htm
-
-http://web.archive.org/web/xmlquery?type=urlquery&url=http://www.webarchive.org.uk/
-
-Use cases for this, knowing the uri, include wikipedia link rot prevention and find mementos. Would be interest in ways of integration with wikipedia to ensure refs are archived and linked to.
-
-But also, beyond the URL. What was on the web in this year etc. Internal infrastructure allows any number of properties to be indexed, and this could be made into an API. What would you like to see?
+Use cases include wikipedia link rot prevention like that undertaken by the [Internet Archive Bot] (https://meta.wikimedia.org/wiki/InternetArchiveBot).
 
 The Memento API
 -------------------------
-Memento covers a range of technologies but in terms of the API, the basic usage is quite simple. ???
-Mention prototype Chrome plugin?
+Memento provides a mechanism to standardise methods of web archive discovery - a basic overview is [here] (https://en.wikipedia.org/wiki/Memento_Project#Usage). 
 
-The Historical UK Host Linkage Dataset
--------------------------------------------------
-http://www.webarchive.org.uk/datasets/ukwa.ds.2/linkage/bl.uk.txt.srt
 
-The Historical UK Link Graph Dataset
----------------------------------------------------
-i.e. The WATs
+Miscellanous
+------------
+
+[APIs, data services, and being generous] (https://blogs.bl.uk/webarchive/2013/03/api.html)
+
+[Way, way, back] (https://inkdroid.org/2012/05/03/way-way-back/)
 
 

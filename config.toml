@@ -21,7 +21,7 @@ canonifyURLs = true
 [params]
   editURL = "https://github.com/ukwa/opendata/edit/hugo/content/"
   description = "Documentation on the data sets and APIs offered by the UK Web Archive."
-  author = "The UK Web Archive and parters"
+  author = "The UK Web Archive and partners"
   showVisitedLinks = false
   themeVariant = "ukwa"
 
@@ -35,9 +35,9 @@ home = [ "HTML", "RSS", "JSON"]
 # Additional formats to build DataCite files:
 [mediaTypes]
   [mediaTypes."application/xml-datacite"]
-  suffix = "xml"
+  suffixes = ["xml"]
   [mediaTypes."application/x-datacite-resolve"]
-  suffix = "resolve"
+  suffixes = ["resolve"]
 
 [outputFormats]
   [outputFormats.DCXML]

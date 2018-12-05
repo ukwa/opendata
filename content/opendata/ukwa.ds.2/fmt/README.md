@@ -5,7 +5,7 @@ title: Details
 UK Web Domain Dataset (1996-2010) Format Profile
 ================================================
 
-As well as collecting the MIME type delivered by the server, we have also run two format identification tools over the content of each HTTP 200 OK response. These tools were Apache Tika and DROID. All three MIME types are collected, along with the year the resource was crawled. These four pieces of information are treated as a 'key' for the resource, and the number of resources with that key are counted up, over the entire dataset. The result is output as tab separated data. For full details see, the Nanite codebase, tag v.0.1.1 was used to create this dataset.
+As well as collecting the [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) delivered by the server, we have also run two format identification tools over the content of each HTTP 200 OK response. These tools were [Apache Tika] (https://tika.apache.org/) and [DROID] (https://digital-preservation.github.io/droid/). All three MIME types are collected, along with the year the resource was crawled. These four pieces of information are treated as a 'key' for the resource, and the number of resources with that key are counted up, over the entire dataset. The result is output as tab separated data. For full details see, the [Nanite] (https://github.com/openpreserve/nanite) codebase, tag v.0.1.1 was used to create this dataset.
 
 For example, this line:
 <pre>
@@ -18,18 +18,18 @@ The 'cleaned' version is a concatenation of all the results for each batch of th
 Extended MIME Types
 -------------------
 
-To bridge between common MIME type usage and the more formalised format definitions in, e.g. PRONOM, we have produced a convention for extended MIME types that is in accord with the relevant RFCs but allows these identifiers to be mapped.
+To bridge between common MIME type usage and the more formalised format definitions in, e.g. [PRONOM] (http://www.nationalarchives.gov.uk/PRONOM), we have produced a convention for extended MIME types that is in accord with the relevant RFCs but allows these identifiers to be mapped.
 
-At heart, we introduce three extended forms:
+Essentially, we introduce three extended forms:
 
 * For formats with MIME types, we add a version parameter that can be mapped to a PRONOM ID. e.g. instead of just 'application/pdf', we can use 'application/pdf; version=1.4', and map this to PUID fmt/18.
 * For formats with no MIME type, but with a PRONOM ID, we can mind non-standard MIME types that bridge the gap, such as: 'application/x-puid-fmt-44'
 * For formats with neither a MIME Type or a PUID, we can usually fall back on file extensions, e.g. 'application/x-ext-ini' for a '.ini' file.
-* Note that for complex audiovisual media, this could also be extended to include the use of the codec parameter as specified in RFC 4181 http://tools.ietf.org/html/rfc4281#section-5
+* Note that for complex audiovisual media, this could also be extended to include the use of the codec parameter as specified in [RFC 4181](http://tools.ietf.org/html/rfc4281#section-5)
 
 To help us cope in those cases where a suitable PRONOM record does not yet exist, we need to be able to link a format back to the software that created it. To this end, we also seek to formalise extended MIME Type parameters that can be used to capture the encoding software. This is complicated by the fact that different formats currently encode this information in different and often confusing ways. For example, it is not always clear if a format is documenting the software that created an object, or the software that an object is being encoded for - i.e. when you take a 'Word 14' DOCX and export as 'Word 97-2004' Doc, which software identity is recorded where?
 
-At the most basic, many formats have some 'software' field that we can map to a 'software=XXX' parameter. Notably, PDF documents both the 'Producer' (e.g. Adobe Distiller X) and the 'Creator' meaning the creating application of the source document (e.g. Open Office or Microsoft Word). In other cases, this kind of information is stored in comment fields, like 'Text TextEntry: keyword=Software, value=ImageMagick, encoding=ISO-8859-1, compression=none' in the case of PNG.
+At the most basic, many formats have some 'software' field that we can map to a 'software=XXX' parameter. Notably, PDF documents both the 'Producer' (e.g. Adobe Distiller X) and the 'Creator' meaning the creating application of the source document (e.g. Open Office or Microsoft Word). In other cases, this kind of information is stored in comment fields, for example 'Text TextEntry: keyword=Software, value=ImageMagick, encoding=ISO-8859-1, compression=none' in the case of PNG.
 
 It may be possible to collect and normalise these formulations, but for now, we seek to simply document the conflict. Thus, for a particular PDF, we may have an extended MIME Type like this:
 <pre>
@@ -46,22 +46,3 @@ Tools
 -----
 Some example scripts for processing this data can be found [here](../../tools)
 
-License
--------
-<p xmlns:dct="http://purl.org/dc/terms/">
-  <a rel="license"
-     href="http://creativecommons.org/publicdomain/zero/1.0/">
-    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
-  </a>
-  <br />
-  To the extent possible under law,
-  <a rel="dct:publisher"
-     href="http://data.webarchive.org.uk/opendata/ukwa.ds.2/">
-    <span property="dct:title">The Project Partners</span></a>
-  have waived all copyright and related or neighboring rights to
-  <span property="dct:title">The UK Web Domain Dataset (1996-2010) Format Profile</span>.
-</p>
-
-Citing this dataset
--------------------
-If you do wish to cite this dataset, please this DOI: [**10.5259/ukwa.ds.2/fmt/1**](http://dx.doi.org/10.5259/ukwa.ds.2/fmt/1).
