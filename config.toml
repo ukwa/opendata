@@ -57,13 +57,13 @@ url = "https://www.webarchive.org.uk/"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-twitter'></i> @UKWebArchive"
+name = "<i class='fab fa-twitter'></i> @UKWebArchive"
 identifier = "ukwa-twitter"
 url = "https://twitter.com/UKWebArchive"
 weight = 30
 
 [[menu.shortcuts]] 
-name = "<i class='fa fa-github'></i> Github repo"
+name = "<i class='fab fa-github'></i> Github repo"
 identifier = "ds"
 url = "https://github.com/ukwa/opendata"
 weight = 10
