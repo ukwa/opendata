@@ -8,19 +8,14 @@ outputs:
 - dcresolve
 ---
 
-The ~2.5 billion 200 OK responses in the (1996-2010) tranch of the [JISC UK Web Domain Dataset]({{ site.baseurl }}/ukwa.ds.2/) dataset have been scanned for geographic references - specifically postcodes. This set of postcode citations, found at particular URLs, crawled at particular times, forms an historical geoindex of the UK web. For more details about how the data was created, its format, and how to use it, see [here](https://github.com/ukwa/opendata/tree/gh-pages/ukwa.ds.2/geo).
+The approximately 2.5 billion 200 OK responses in the 1996-2010 tranche of the [JISC UK Web Domain Dataset]({{ site.baseurl }}/ukwa.ds.2/) dataset have been scanned for geographic references - specifically postcodes. This set of postcode citations, found at particular URLs, crawled at particular times, forms an historical geoindex of the UK web. For more details about how the data was created, its format, and how to use it, see [here](https://github.com/ukwa/opendata/tree/gh-pages/ukwa.ds.2/geo).
 
-The geoindex is composed of some 700,641,549 lines of TSV data, each asserting that a given web page, crawled at a given data, contained one or more references to a given postcode. Uncompressed, this is a total of 61 GB of text, and so care should be taken before downloading or attempting to use this data set.
+The geoindex is composed of some 700,641,549 lines of TSV data, each asserting that a given web page, crawled at a given date, contained one or more references to a given postcode. Uncompressed, this is a total of 61 GB of text, and so care should be taken before downloading or attempting to use this data set.
 
 Download
 --------
 
 The data is not hosted on GitHub, as it is far too large. It can be downloaded from [here](http://www.webarchive.org.uk/datasets/ukwa.ds.2/geo/) in a compressed format (total download size, about 8GB).
-
-
-{% include cite_doi.md %}
-
-{% include jia_cc0.md %}
 
 
 The structure of the data
@@ -42,7 +37,7 @@ i.e. timestamp and the URL are separated by a `/`, and then a _tab character_ se
 </pre>
 
 This format is not ideal, but can be parsed fairly easily. For example, by extracting the first column and adding a prefix 
-of `http://wayback.archive.org/web/` (i.e. use the form `http://wayback.archive.org/web/{crawl-timestamp}/{url}`) you'll get to the Internet Archive's copy of that page (unless it's blocked by `robots.txt`). Similarly, you can extract the postcode and change to the OS linked-data form, like this: <http://data.ordnancesurvey.co.uk/doc/postcodeunit/SO164GU>
+of `http://wayback.archive.org/web/` (i.e. use the form `http://wayback.archive.org/web/{crawl-timestamp}/{url}`) you'll get to the Internet Archive's copy of that page (unless it's blocked by `robots.txt`). Similarly, you can extract the postcode and change to the OS linked-data form, like this: <http://data.ordnancesurvey.co.uk/doc/postcodeunit/LS237BQ>
 
 
 Unfortunately, at the current time, we've only been able to extract this data for the 1996-2010 chunk of the underlying dataset. We intend to extend this analysis to the remaining years, but are not able to dedicate resources to doing so at the current time.
@@ -57,7 +52,7 @@ To attempt to make the dataset more manageable, we've broken it down into separa
 How the data was created
 ------------------------
 
-This was powered by the regular-expression-based [WARCRegexIndexer](https://github.com/ukwa/webarchive-discovery/blob/master/warc-hadoop-indexer/src/main/java/uk/bl/wa/hadoop/regex/WARCRegexIndexer.java). It was run like this:
+This was powered by the regular-expression-based [WARCRegexIndexer](https://github.com/ukwa/webarchive-discovery/blob/master/warc-hadoop-recordreaders/src/main/java/uk/bl/wa/hadoop/regex/WARCRegexIndexer.java). It was run like this:
 
 <pre>
 hadoop jar EntityIndexer-0.0.1-SNAPSHOT-job.jar uk.bl.wap.hadoop.regex.WARCRegexIndexer ia.archives.job.1 postcodes "[A-Z]{1,2}[0-9R][0-9A-Z]? [0-9][ABD-HJLNP-UW-Z]{2}"
@@ -67,24 +62,3 @@ This job goes through the arc.gz or warc.gz files listed in ia.archive.job.1, ex
 
 The lists from separate runs were then combined into a set of separate files based on postcode prefix.
 
-
-License
--------
-<p xmlns:dct="http://purl.org/dc/terms/">
-  <a rel="license"
-     href="http://creativecommons.org/publicdomain/zero/1.0/">
-    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
-  </a>
-  <br />
-  To the extent possible under law,
-  <a rel="dct:publisher"
-     href="http://data.webarchive.org.uk/opendata/ukwa.ds.2/">
-    <span property="dct:title">The Project Partners</span></a>
-  have waived all copyright and related or neighboring rights to
-  <span property="dct:title">The UK Web Domain Dataset (1996-2010) Geoindex</span>.
-</p>
-
-
-Citing this dataset
--------------------
-If you do wish to cite this dataset, please this DOI: [**10.5259/ukwa.ds.2/geo/1**](http://dx.doi.org/10.5259/ukwa.ds.2/geo/1).

@@ -41,17 +41,17 @@ vanguard.ntu.ac.uk/ 19961018104851 http://vanguard.ntu.ac.uk:80/ text/html 200 2
 
 These space-separated fields can be interpreted as follows:
 
-vanguard.ntu.ac.uk/
+vanguard.ntu.ac.uk/ 
 : This is the canonicalized version of the URL (the 'key' of the index)
 
 19961018104851
-: Time of capture (in `YYYYMMDDHHMMSS` format)
+: Time of capture (in 'YYYYMMDDHHMMSS' format)
 
 http://vanguard.ntu.ac.uk:80/
 : The actual URL crawled
 
 text/html
-: The `Content-Type` (as returned in the original server response)
+: The 'Content-Type' (as returned in the original server response)
 
 200
 : HTTP status code reported by the server
@@ -60,7 +60,7 @@ text/html
 : Checksum (this is the Base32 encoded form of the SHA1 digest of the response payload).
 
 -
-: This is the redirect URL (i.e. the `Location` header, populated only for 3** responses, "-" for others).
+: This is the redirect URL (i.e. the 'Location' header, populated only for 3** responses, "-" for others).
 
 34954008 
 : This is the offset of the record in the WARC/ARC file.
@@ -74,7 +74,3 @@ Download
 
 This large dataset cannot be hosted on GitHub. It can be downloaded from [here](http://www.webarchive.org.uk/datasets/ukwa.ds.2/cdx/) instead, as compressed files containing the CDX data for each year of crawler activity.
 
-
-{% include cite_doi.md %}
-
-{% include jia_cc0.md %}

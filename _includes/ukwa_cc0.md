@@ -10,6 +10,6 @@ License
   <a rel="dct:publisher"
      href="{{ site.baseurl }}/">
     <span property="dct:title">The UK Web Archive</span></a>
-  have waived all copyright and related or neighboring rights to the
+  have waived all copyright and related or neighbouring rights to the
   <span property="dct:title">{{ page.subtitle }} {{ page.title }}</span> (<a href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>).
 </p>
