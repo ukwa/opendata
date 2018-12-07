@@ -8,10 +8,10 @@ defaultContentLanguageInSubdir = true
     title = "UK Web Archive Data Site"
     weight = 1
     languageName = "English"
-  [languages.cy]
-    title = "UK Web Archive Data Site Welsh"
-    weight = 2
-    languageName = "Welsh"
+#  [languages.cy]
+#    title = "UK Web Archive Data Site Welsh"
+#    weight = 2
+#    languageName = "Welsh"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
@@ -26,7 +26,6 @@ canonifyURLs = true
   themeVariant = "ukwa"
 
 ignoreFiles = [ "\\.ad$" ]
-
 
 # For search functionnality: JSON
 [outputs]
