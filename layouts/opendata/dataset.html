@@ -2,23 +2,10 @@
 
 {{ partial "schema-org.html" . }}
 
+<div class="row">
+<div class="col-md-8">
+  
 {{ .Content }}
-
-{{ .Scratch.Set "pages" .Page.Pages }}
-{{ if .Page.Sections}}
-    {{ .Scratch.Set "pages" (.Page.Pages | union .Page.Sections) }}
-{{ end }}
-{{ $pages := (.Scratch.Get "pages") }}
-
-{{ with $paginator := .Paginate $pages }}
-{{ range $paginator.Pages }}
-
-    {{ .Render "summary" }}
-
-{{ end }}
-{{ partial "paginator" . }}
-{{ end }}
-
 
 <footer class=" footline" >
 	{{with .Params.LastModifierDisplayName}}
@@ -27,56 +14,70 @@
 	{{end}}
 </footer>
 
+</div>
+<div class="col-md-4">
+
+{{ partial "sections" . }}
+
 {{ if .Params.doi }}
 
 <h2>Citing this dataset</h2>
-
 <p>
-If you do wish to cite this dataset, please use this DOI: <b>{{ .Params.doi }}</b>
-</p>
-<p>
-<a class="btn btn-default" href="http://dx.doi.org/{{ .Params.doi }}">{{ .Params.doi }}</a>
+  If you do wish to cite this dataset, please use this DOI: <b>{{ .Params.doi }}</b>   
+
+ {{ range .AlternativeOutputFormats -}}
+ <br/>
+ <a rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">{{ .MediaType.Type }}</a>
+ <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+ {{ end -}}
 </p>
 
-<table>
-  <tr>
-    <th>Option</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>data</td>
-    <td>path to data files to supply the data that will be passed into templates.</td>
-  </tr>
-  <tr>
-    <td>engine</td>
-    <td>engine to be used for processing templates. Handlebars is the default.</td>
-  </tr>
-  <tr>
-    <td>ext</td>
-    <td>extension to be used for dest files.</td>
-  </tr>
-</table>
+{{ end }}
 
-{{ range .AlternativeOutputFormats -}}
-<a rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">{{ .MediaType.Type }}</a><br/>
-<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-{{ end -}}
+{{ if eq .Params.license "ukwa-cc0" }}
 
 <h2>License</h2>
 
-<p xmlns:dct="http://purl.org/dc/terms/">
-  <a rel="license" style="float:right" 
+<a rel="license" class="float-right" 
      href="http://creativecommons.org/publicdomain/zero/1.0/">
     <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
-  </a>
+</a>
+
+<p xmlns:dct="http://purl.org/dc/terms/">
   To the extent possible under law,
   <a rel="dct:publisher" href="https://www.webarchive.org.uk/en/ukwa/about">
     <span property="dct:title">The UK Web Archive</span></a>
   has waived all copyright and related or neighbouring rights to the
   <span property="dct:title">{{ .Params.subtitle }} {{ .Params.title }}</span> 
-  (<a href="http://dx.doi.org/{{ .Params.doi }}">{{ .Params.doi }}B</a>).
+  (<a href="http://dx.doi.org/{{ .Params.doi }}">{{ .Params.doi }}</a>).
+  <br/>
 </p>
 
 {{ end }}
+
+{{ if eq .Params.license "jai-cc0" }}
+
+<h2>License</h2>
+
+<a rel="license" class="float-right" 
+   href="http://creativecommons.org/publicdomain/zero/1.0/">
+  <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+</a>
+
+<p xmlns:dct="http://purl.org/dc/terms/">
+  To the extent possible under law,
+  <a rel="dct:publisher" href="{{ site.baseurl }}/ukwa.ds.2/">
+    <span property="dct:title">The Project Partners</span></a>
+  has waived all copyright and related or neighbouring rights to the
+  <span property="dct:title">{{ .Params.subtitle }} {{ .Params.title }}</span> 
+  (<a href="http://dx.doi.org/{{ .Params.doi }}">{{ .Params.doi }}</a>).
+  <br/>
+</p>
+
+{{ end }}
+
+</div>
+</div>
+
 
 {{ end }}

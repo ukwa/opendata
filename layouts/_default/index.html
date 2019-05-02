@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+{{ if .Content }}
+<section class="blog-post">
+    {{ .Content }}
+</section>
+{{ end }}
+
+<div class="row p-4">
+
+{{ with $paginator := .Paginate .Page.Sections }}
+{{ range $paginator.Pages }}
+
+<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-3">
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title">{{ .Title }}</h5>
+    <p class="card-text">
+    	{{ .Description }}
+    </p>
+    <a href='{{ .Permalink }}' class="btn btn-primary">{{ if isset .Params "action" }}{{ .Params.action }}{{ else }}Find our more{{ end }}</a>
+  </div>
+</div>
+</div>
+
+{{ end }}
+{{ partial "paginator" . }}
+{{ end }}
+</div>
+
+{{ end }}
+
+
+{{ define "footer" }}
+
+<div class="container-fluid">
+<div class="row pt-3 pb-4">
+<div class="col-12 text-center">
+
+<h3>Collaborate With Us</h3>
+
+<p>We work in the open, and love sharing data, tools, techniques and knowlege with others.<br/>If there's something you'd like to see here, or if you have any questions, please let us know.</p>
+
+<a href="https://www.webarchive.org.uk/ukwa/en/contact" class="btn btn-primary">Get in touch</a>
+<a href="https://www.github.com/ukwa/" class="btn btn-primary">Find us on GitHub</a>
+<a href="https://twitter.com/UKWebArchive" class="btn btn-primary">Follow us on Twitter</a>
+</div>
+</div>
+</div>
+
+<hr/>
+
+{{ partial "footer" . }}
+
+{{ end }}

@@ -1,8 +1,8 @@
 ---
 title: JISC UK Web Domain Dataset
 doi: 10.5259/ukwa.ds.2/1
-weight: 2
-description: "UK web resources from the Internet Archive's collections, held on behalf of JISC. Covers the pre-Legal Deposit period from 1996 ro April 2013."
+weight: 3
+description: "UK web resources from the Internet Archive's collections, held on behalf of JISC. Covers the pre-Legal Deposit period from 1996 to April 2013."
 date: 1996-01-01
 layout: dataset
 contributors:
@@ -26,15 +26,6 @@ The collection was deposited with us in two separate tranches. The 1996-2010 tra
 This dataset cannot be made generally available here, but can be used to generate secondary datasets, and these can be made available under open license terms.
 
 Before interpreting results from this dataset, or any secondary-datasets based upon it, please refer to the [known issues with this dataset](#issues).
-
-Secondary datasets
-------------------
-
-* [JISC UK Web Domain Dataset (1996-2010) Format Profile](./fmt)
-* [JISC UK Web Domain Dataset (1996-2010) Geoindex](./geo)
-* [JISC UK Web Domain Dataset (1996-2010) Host Link Graph](./host-linkage)
-* [JISC UK Web Domain Dataset (1996-2013) Crawled URL Index](./cdx)
-
 
 Issues
 ------
@@ -86,9 +77,9 @@ If you attempt to use this file, you'll get a *Unexpected end of ZLIB input stre
 In partnership with
 -------------------
 
-[JISC] (http://www.jisc.ac.uk/)
+[JISC](http://www.jisc.ac.uk/)
 
-[Internet Archive] (http://www.archive.org/)
+[Internet Archive](http://www.archive.org/)
 
 
 

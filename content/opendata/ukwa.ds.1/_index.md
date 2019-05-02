@@ -24,5 +24,3 @@ Since 2004, the [UK Web Archive](http://www.webarchive.org.uk/) has been collect
 Secondary datasets
 ------------------
 
-* [UK Selective Web Archive Classification Dataset](./classification)
-

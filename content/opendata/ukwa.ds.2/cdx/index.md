@@ -10,6 +10,7 @@ contributors:
   email: web-archivist@bl.uk
   path: https://www.webarchive.org.uk/
   role: publisher
+license: jia-cc0
 licenses:
 - title: Public Domain Dedication
   path: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,6 +1,7 @@
 ---
 title: APIs
-pre: <b>2. </b>
+description: Explore our APIs, and how you can use them.
+action: Query our APIs
 weight: 2
 ---
 
@@ -33,7 +34,7 @@ Memento provides a mechanism to standardise methods of web archive discovery - a
 Miscellanous
 ------------
 
-[APIs, data services, and being generous] (https://blogs.bl.uk/webarchive/2013/03/api.html)
+[APIs, data services, and being generous](https://blogs.bl.uk/webarchive/2013/03/api.html)
 
 [Way, way, back] (https://inkdroid.org/2012/05/03/way-way-back/)
 

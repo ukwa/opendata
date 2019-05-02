@@ -1,0 +1,24 @@
+
+{{ .Scratch.Set "pages" .Page.Pages }}
+{{ if .Page.Sections}}
+    {{ .Scratch.Set "pages" (.Page.Pages | union .Page.Sections) }}
+{{ end }}
+{{ $pages := (.Scratch.Get "pages") }}
+
+{{ with $paginator := .Paginate $pages }}
+
+{{ range $paginator.Pages }}
+
+<div class="card text-center mb-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ .Title }}</h5>
+    <p class="card-text">
+    	{{ .Description }}
+    </p>
+    <a href='{{ .Permalink }}' class="btn btn-primary">{{ if isset .Params "action" }}{{ .Params.action }}{{ else }}Find our more{{ end }}</a>
+  </div>
+</div>
+
+{{ end }}
+{{ partial "paginator" . }}
+{{ end }}
