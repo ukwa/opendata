@@ -12,6 +12,7 @@ contributors:
 licenses:
 - title: UK Web Archive Terms of Use
   path: https://www.webarchive.org.uk/ukwa/info/terms_conditions
+layout: dataset
 outputs:
 - html
 - dcxml

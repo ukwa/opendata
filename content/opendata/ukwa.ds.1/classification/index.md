@@ -20,6 +20,7 @@ resources:
   path: ./data/classification.tsv
   format: tsv
   mediatype: text/tsv
+layout: dataset
 outputs:
 - html
 - dcxml

@@ -4,6 +4,7 @@ doi: 10.5259/ukwa.ds.2/1
 weight: 2
 description: "UK web resources from the Internet Archive's collections, held on behalf of JISC. Covers the pre-Legal Deposit period from 1996 ro April 2013."
 date: 1996-01-01
+layout: dataset
 contributors:
 - title: The UK Web Archive
   email: web-archivist@bl.uk

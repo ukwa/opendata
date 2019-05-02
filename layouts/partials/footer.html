@@ -1,0 +1,27 @@
+<div class="container-fluid footer">
+
+<div class="row pt-3 pb-5">
+    <div class="col-12 text-center">
+        The UK Web Archive collects on behalf of these UK Legal deposit Libraries
+    </div>
+</div>
+
+<div class="row footer-logos pb-3 mb-3">
+        <div class="col-md-2 text-center p-0"><a href="http://www.bodleian.ox.ac.uk/" target="_blank"><img src="/img/bodleian_logo_BW.jpg" alt="Bodleian Libraries" class="img-thumbnail w-50"></a></div>
+        <div class="col-md-2 text-center p-0"><a href="https://www.llgc.org.uk/" target="_blank"><img src="/img/llgc_logo_BW.png" alt="LLGC NLW" class="img-thumbnail w-50"></a></div>
+        <div class="col-md-2 text-center p-0"><a href="https://www.nls.uk/" target="_blank"><img src="/img/NLS_logo_2_BW.jpg" alt="National Library of Scotland" class="img-thumbnail w-50"></a></div>
+        <div class="col-md-2 text-center p-0"><a href="https://www.bl.uk/" target="_blank"><img src="/img/bl_logo_BW.png" alt="British Library" class="img-thumbnail w-50"></a></div>
+        <div class="col-md-2 text-center p-0"><a href="http://www.lib.cam.ac.uk/" target="_blank"><img src="/img/cambrige_logo600_BW.png" alt="Cambrige University Library" class="img-thumbnail w-50"></a></div>
+        <div class="col-md-2 text-center p-0"><a href="https://www.tcd.ie/" target="_blank"><img src="/img/trinity_logo_BW.jpg" alt="Trinity College Dublin" class="img-thumbnail w-50"></a></div>
+</div>
+
+{{ $colorScheme := default "light" .Site.Params.footer.colorScheme }}
+
+<footer class="blog-footer w-100">
+    <nav class="navbar navbar-{{ $colorScheme }} bg-{{ $colorScheme }}">
+        <p class="w-100 text-center"><a href="#">{{ i18n "backToTop" }}</a></p>
+    </nav>
+</footer>
+
+</div>
+

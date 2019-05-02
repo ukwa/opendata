@@ -1,7 +1,3 @@
----
-title: Details
----
-
 UK Web Domain Dataset (1996-2010) Format Profile
 ================================================
 

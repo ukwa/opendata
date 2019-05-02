@@ -2,6 +2,7 @@
 title: Geoindex
 subtitle: JISC UK Web Domain Dataset (1996-2010)
 doi: 10.5259/ukwa.ds.2/geo/1
+layout: dataset
 outputs:
 - html
 - dcxml

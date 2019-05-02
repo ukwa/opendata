@@ -1,8 +1,24 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 {{ partial "schema-org.html" . }}
 
 {{ .Content }}
+
+{{ .Scratch.Set "pages" .Page.Pages }}
+{{ if .Page.Sections}}
+    {{ .Scratch.Set "pages" (.Page.Pages | union .Page.Sections) }}
+{{ end }}
+{{ $pages := (.Scratch.Get "pages") }}
+
+{{ with $paginator := .Paginate $pages }}
+{{ range $paginator.Pages }}
+
+    {{ .Render "summary" }}
+
+{{ end }}
+{{ partial "paginator" . }}
+{{ end }}
+
 
 <footer class=" footline" >
 	{{with .Params.LastModifierDisplayName}}
@@ -63,4 +79,4 @@ If you do wish to cite this dataset, please use this DOI: <b>{{ .Params.doi }}</
 
 {{ end }}
 
-{{ partial "footer.html" . }}
+{{ end }}

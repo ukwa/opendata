@@ -5,7 +5,7 @@ defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.en]
-    title = "UK Web Archive Data Site"
+    title = "UK Web Archive Open Data"
     weight = 1
     languageName = "English"
 #  [languages.cy]
@@ -14,7 +14,7 @@ defaultContentLanguageInSubdir = true
 #    languageName = "Welsh"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
+theme = "hugo-bootstrap"
 
 canonifyURLs = true
 
@@ -47,6 +47,28 @@ home = [ "HTML", "RSS", "JSON"]
   mediaType = "application/x-datacite-resolve"
   baseName = "datacite"
   isPlainText = true
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Datasets"
+    url = "/opendata/"
+    weight = 2
+
+[[menu.main]]
+    name = "APIs"
+    url = "/apis/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact Us"
+    url = "https://www.webarchive.org.uk/ukwa/contact"
+    weight = 5
+
+
 
 # The Menu
 [[menu.shortcuts]]

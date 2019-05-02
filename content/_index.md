@@ -9,7 +9,6 @@ In order to facilitate research, and so we might better understand and preserve 
 
 We hope that by making these datasets available, the broader community will find interesting ways to re-use, explore and visualise the contents of our web archive. We are keen to work with any interested parties to exploit these datasets, and understand what other derivative or summary data would be of interest.
 
-{{% children depth="3" %}}
 
 Datasets, Tools & APIs
 ----------------------
