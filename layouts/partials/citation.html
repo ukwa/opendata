@@ -5,8 +5,8 @@
   If you wish to cite this dataset, please use this DOI: <b>{{ .Params.doi }}</b>
 </p>
 
-<p>
-<i>e.g. <a href="https://datacite.org/cite-your-data.html">following this example</a>:</i><br/>
+<div><i>e.g. <a href="https://datacite.org/cite-your-data.html">following this example</a>:</i></div>
+<p class="bg-light">
 {{ with .Params.publisher }}{{ . }}{{ else }}The UK Web Archive{{ end }}. {{ with .Params.date }}({{  truncate "4" "" . }}).{{ end }} <i>{{ .Title }}</i>.{{ with .Params.version }} Version {{ . }}. {{ end }} The British Library. <a href="https://doi.org/{{ .Params.doi }}">https://doi.org/{{ .Params.doi }}</a>.
 </p>
 

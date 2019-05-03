@@ -13,6 +13,7 @@ contributors:
 licenses:
 - title: UK Non-Print Legal Deposit Regulations
   path: https://www.legislation.gov.uk/ukdsi/2013/9780111533703/contents
+download: "This collection is not available for download. See <a href='#accessing-this-dataset'>Accessing this dataset<a> for details."
 outputs:
 - html
 - dcxml
@@ -20,4 +21,8 @@ outputs:
 ---
 
 ...TBA...
+
+## Accessing this dataset
+
+This dataset is not generally accessible. Where direct access cannot be given, the UK Web Archive may be able to extract non-consumptive datasets ([as defined here](https://www.hathitrust.org/htrc_ncup)), on behalf of one or more researchers. Please get in touch if this is of interest.
 

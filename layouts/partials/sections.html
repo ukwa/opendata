@@ -7,25 +7,31 @@
 
 {{ with $paginator := .Paginate $pages }}
 
-<div class="row">
+	<div class="row">
 
-{{ range $paginator.Pages }}
+	{{ range $paginator.Pages }}
 
-<div class="col-md-4">
-<div class="card text-center mb-3">
-  <div class="card-body">
-    <h5 class="card-title">{{ .Title }}</h5>
-    <p class="card-text">
-    	{{ .Description }}
-    </p>
-    <a href='{{ .Permalink }}' class="btn btn-primary">{{ if isset .Params "action" }}{{ .Params.action }}{{ else }}Find our more{{ end }}</a>
-  </div>
-</div>
-</div>
+		<div class="col-md-4">
+		<div class="card text-center mb-3">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ .Title }}</h5>
+		    <p class="card-text">
+		    	{{ .Description }}
+		    </p>
+		    <a href='{{ .Permalink }}' class="btn btn-primary">{{ if isset .Params "action" }}{{ .Params.action }}{{ else }}Find our more{{ end }}</a>
+		  </div>
+		</div>
+		</div>
+
+	{{ end }}
+	{{ partial "paginator" . }}
+
+	</div>
 
 {{ end }}
-{{ partial "paginator" . }}
 
-</div>
 
+{{ with $pages }}
+{{ else }}
+	<p>There are no datasets available at present.</p>
 {{ end }}

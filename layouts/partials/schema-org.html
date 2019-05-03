@@ -1,3 +1,6 @@
+{{ if .Params.doi -}}
+<meta name="citation_doi" content="{{ .Params.doi }}">
+{{- end }}
 {{ if .Params.resources -}}
 <script type="application/ld+json">
 {{ $url := .URL -}}
