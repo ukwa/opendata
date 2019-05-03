@@ -1,6 +1,7 @@
 ---
 title: Crawled URL Index
 subtitle: JISC UK Web Domain Dataset (1996-2013)
+description: "Detailed content index files, recording metadata about the content of every URL in this collection."
 doi: 10.5259/ukwa.ds.2/cdx/1
 date: 2014-09-19
 version: 1
@@ -22,6 +23,7 @@ resources:
   format: tsv
   mediatype: text/tsv
 layout: dataset
+download: "This large dataset cannot be hosted on GitHub. It can be downloaded from <a href='http://www.webarchive.org.uk/datasets/ukwa.ds.2/cdx/'>here</a> instead, as compressed files containing the CDX data for each year of crawler activity."
 outputs:
 - html
 - dcxml
@@ -32,8 +34,7 @@ In order to enable access to web archives, we use [CDX files](https://archive.or
 
 The original CDX files were generated for us by the Internet Archive, with one CDX file for each ARC or WARC file. This makes it easy for us to manage those files, but it is not very convenient for researchers to have to download and deal with over half a million separate small files. Therefore, we have processed those CDX files and aggregated the  data into 18 separate CDX files -- one per year of crawling activity. Please note that the individual CDX files are not sorted.
 
-Schema
-------
+### Schema
 
 There are a few variations on the CDX format, but for this dataset, the CDX lines look like this:
 
@@ -71,8 +72,5 @@ DOTUK-HISTORICAL-1996-2010-GROUP-AA-XABEGS-20110428000000-00000.arc.gz
 : This is the WARC/ARC which contains the record (coupled with the above offset, used to determine the exact location).
 
 
-Download
---------
 
-This large dataset cannot be hosted on GitHub. It can be downloaded from [here](http://www.webarchive.org.uk/datasets/ukwa.ds.2/cdx/) instead, as compressed files containing the CDX data for each year of crawler activity.
 

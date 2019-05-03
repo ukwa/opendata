@@ -7,8 +7,11 @@
 
 {{ with $paginator := .Paginate $pages }}
 
+<div class="row">
+
 {{ range $paginator.Pages }}
 
+<div class="col-md-4">
 <div class="card text-center mb-3">
   <div class="card-body">
     <h5 class="card-title">{{ .Title }}</h5>
@@ -18,7 +21,11 @@
     <a href='{{ .Permalink }}' class="btn btn-primary">{{ if isset .Params "action" }}{{ .Params.action }}{{ else }}Find our more{{ end }}</a>
   </div>
 </div>
+</div>
 
 {{ end }}
 {{ partial "paginator" . }}
+
+</div>
+
 {{ end }}

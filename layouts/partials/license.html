@@ -1,39 +1,3 @@
-{{ define "main" }}
-
-{{ partial "schema-org.html" . }}
-
-<div class="row">
-<div class="col-md-8">
-  
-{{ .Content }}
-
-<footer class=" footline" >
-	{{with .Params.LastModifierDisplayName}}
-	    <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
-	    </div>
-	{{end}}
-</footer>
-
-</div>
-<div class="col-md-4">
-
-{{ partial "sections" . }}
-
-{{ if .Params.doi }}
-
-<h2>Citing this dataset</h2>
-<p>
-  If you do wish to cite this dataset, please use this DOI: <b>{{ .Params.doi }}</b>   
-
- {{ range .AlternativeOutputFormats -}}
- <br/>
- <a rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">{{ .MediaType.Type }}</a>
- <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
- {{ end -}}
-</p>
-
-{{ end }}
-
 {{ if eq .Params.license "ukwa-cc0" }}
 
 <h2>License</h2>
@@ -73,11 +37,5 @@
   (<a href="http://dx.doi.org/{{ .Params.doi }}">{{ .Params.doi }}</a>).
   <br/>
 </p>
-
-{{ end }}
-
-</div>
-</div>
-
 
 {{ end }}

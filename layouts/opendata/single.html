@@ -1,0 +1,45 @@
+
+{{ define "main" }}
+
+<div class="row">
+<div class="col-md-8">
+
+<h2>Summary</h2>
+
+<p>
+{{ .Description }}
+</p>
+
+<h2>Details</h2>
+
+{{ .Content }}
+
+<footer class=" footline" >
+	{{with .Params.LastModifierDisplayName}}
+	    <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
+	    </div>
+	{{end}}
+</footer>
+
+</div>
+<div class="col-md-4">
+
+{{ with .Params.download }}
+
+<h2>Download</h2>
+
+<p>
+{{ . | safeHTML }}
+</p>
+
+{{ end }}
+
+{{ partial "license" . }}
+
+{{ partial "citation" . }}
+
+</div>
+</div>
+
+
+{{ end }}
