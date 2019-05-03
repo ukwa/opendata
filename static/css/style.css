@@ -35,7 +35,7 @@ body {
     text-decoration: underline !important;
 }
 
-.blog-main h2 {
+.blog-main h2, .blog-main h3, .blog-main h4 {
   color: #0c49b0;  
 }
 
