@@ -2,11 +2,12 @@
 
 <h2>Citing this dataset</h2>
 <p>
-  If you wish to cite this dataset, please use this DOI: <b>{{ .Params.doi }}</b>  e.g.
+  If you wish to cite this dataset, please use this DOI: <b>{{ .Params.doi }}</b>
 </p>
 
 <p>
-The UK Web Archive. {{ with .Params.date }}{{  truncate "4" "" . }}.{{ end }} <i>{{ .Title }}</i>. <a href="https://doi.org/{{ .Params.doi }}">https://doi.org/{{ .Params.doi }}</a>.
+<i>e.g. <a href="https://datacite.org/cite-your-data.html">following this example</a>:</i><br/>
+{{ with .Params.publisher }}{{ . }}{{ else }}The UK Web Archive{{ end }}. {{ with .Params.date }}({{  truncate "4" "" . }}).{{ end }} <i>{{ .Title }}</i>.{{ with .Params.version }} Version {{ . }}. {{ end }} The British Library. <a href="https://doi.org/{{ .Params.doi }}">https://doi.org/{{ .Params.doi }}</a>.
 </p>
 
 <p>

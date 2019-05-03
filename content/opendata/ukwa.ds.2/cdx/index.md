@@ -6,6 +6,7 @@ doi: 10.5259/ukwa.ds.2/cdx/1
 date: 2014-09-19
 version: 1
 isderivedfrom: 10.5259/ukwa.ds.1/1
+publisher: JISC and the Internet Archive
 contributors:
 - title: The UK Web Archive
   email: web-archivist@bl.uk

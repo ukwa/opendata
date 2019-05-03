@@ -24,15 +24,7 @@
 </div>
 <div class="col-md-4">
 
-{{ with .Params.download }}
-
-<h2>Download</h2>
-
-<p>
-{{ . | safeHTML }}
-</p>
-
-{{ end }}
+{{ partial "download" . }}
 
 {{ partial "license" . }}
 

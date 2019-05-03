@@ -5,6 +5,7 @@ weight: 1
 description: "UK web resources from the Internet Archive's collections, held on behalf of JISC. Covers the pre-Legal Deposit period from 1996 to April 2013."
 date: 1996-01-01
 layout: dataset
+publisher: JISC and the Internet Archive
 contributors:
 - title: The UK Web Archive
   email: web-archivist@bl.uk
@@ -13,11 +14,15 @@ contributors:
 licenses:
 - title: Internet Archive and JISC Research Agreement
   path: https://www.history.ac.uk/projects/digital/AADDA
+download: "This collection is not available for download. See <a href='#accessing-this-dataset'>Accessing this dataset<a> for details."
 outputs:
 - html
 - dcxml
 - dcresolve
 ---
+
+<p class="text-center"><a href="http://www.jisc.ac.uk/"><img src="/images/jisc-logo-sml.png"></a>
+<a href="http://www.archive.org/"><img src="/images/ia-logo-sml.png"></a></p>
 
 In partnership with the [Internet Archive](http://www.archive.org/) and [JISC](http://www.jisc.ac.uk/), we have obtained access to the subset of the Internet Archive's web collection that relates to the UK. The JISC UK Web Domain Dataset (1996-2013) contains all of the resources from the Internet Archive that were hosted on domains ending in '.uk', or that are required in order to render those UK pages.
 
@@ -27,15 +32,30 @@ This dataset cannot be made generally available here, but can be used to generat
 
 Before interpreting results from this dataset, or any secondary-datasets based upon it, please refer to the [known issues with this dataset](#issues).
 
-### Issues ###
+## Summary Statistics ##
+
+Tranche 2011-201304 contains 203,502 blobs, 30,036,052,322,986 bytes  (24,060 warc.gz files)
+
+Tranche 1996-2010 contains 4,494 warc.gz files
+
+
+## Accessing this dataset
+
+This dataset is not generally accessible, and researchers must seek approval from both [JISC](http://www.jisc.ac.uk/) and [Internet Archive](http://www.archive.org/) and agree to the associated research agreement, as well as securing funding to transfer and host the data.
+
+However, researchers associated with [The Alan Turing Institute](https://www.turing.ac.uk/), [the L3S Research Centre](https://www.l3s.de/en), [The Oxford Internet Institute](https://www.oii.ox.ac.uk/) and [Institute of Historical Research](https://www.history.ac.uk/) should be able to take advantage of existing agreements.
+
+Where direct access cannot be given, the UK Web Archive may be able to extract non-consumptive datasets ([as defined here](https://www.hathitrust.org/htrc_ncup)), on behalf of one or more researchers. Please get in touch if this is of interest.
+
+## Issues ##
 
 This corpus has been assembled from a few different sources, each exploiting different crawl configurations, and this should be borne in mind when attempting to interpret the data.
 
-#### Sources ####
+### Sources ###
  
 The Internet Archive (IA) web collection comes from crawls run by the IA Web Group for different archiving partners, the whole-web crawls and other miscellaneous crawls run by IA, as well as data donations from Alexa and other companies or institutions. IA is not able to share the names of these companies, but can state that they include a few vertical search engines, and some other Google-like companies. The IA web collection does not include any [CommonCrawl](http://commoncrawl.org/) data, and so neither does this extraction of UK domains.
 
-#### Crawl Policies ####
+### Crawl Policies ###
 
 This range of sources means that comprehensive documentation of the crawl configuration for all crawls is not available. Each of these archiving initiatives has its own crawling policies with regard to revisits, de-duplication, maximum resource or crawl size, etc. For example, the IA Web Group generally imposes a file size limit of 100 MB on records for some partner crawls, and so large objects may be under-represented in the dataset. Indeed, in some cases, [this resource size limit may be as low as 10MB](http://webarchive.loc.gov/all/20110813043651/http://www.archive.org/about/faqs.php#18). In general, these crawls obeyed robots.txt, and so many sites may be missing or patchy for that reason. Also, as robots.txt files are usually written with search crawlers in mind, they often block non-textual resources like embedded images or stylesheets, biasing the collection towards textual and HTML resources.
 
@@ -49,7 +69,7 @@ Since 2008, de-duplication was turned on in some select cases. Also, it would be
 
 Like most web archives, the limitations of the crawling process mean that highly dynamic or form-driven sites will not be archived completely. Embedded objects like Flash, Java Applets, video and audio files and so on will generally not be archived correctly. Also, most web crawlers follow long chains of links from their initial starting points, and so the regularity with which sites are visited is driven largely by how many links refer to them, rather than being an explicit curatorial request.
  
-#### Extraction ####
+### Extraction ###
 
 The extracted data contains all captures of .uk resources in the Internet Archive Web collection (for the given time range). A capture stored in an ARC file was extracted into an ARC file, while a capture that was stored in a WARC file was extracted into a WARC file. No limits on resource sizes were placed in the extraction. 
  
@@ -57,28 +77,13 @@ After extracting all these (W)ARCs for the period 1996 to 2010, IA generated [WA
 
 Later the process was repeated for the 2011 to April 2013 tranche of data. In this case the whole of the extraction was performed at once, so this data is not split by phase.
 
-## Summary Statistics ##
-
-Tranche 2011-201304 contains 203,502 blobs, 30,036,052,322,986 bytes  (24,060 warc.gz files)
-
-Tranche 1996-2010 contains 4,494 warc.gz files
-
-
-## Data Quality Problems ##
+### Data Quality Problems ###
 
 Tranche 2011-201304 appears to contain an accidentally truncated WARC.GZ file:
 
     2011-201304/part-04/warcs/DOTUK-HISTORICAL-2011-201304-WARCS-PART-00072-801000-000000.warc.gz
     
 If you attempt to use this file, you'll get a *Unexpected end of ZLIB input stream* error. Based on the MD5 hashes inventory on the original drives, this file appears to be exactly as it was supplied to us.
-
-
-In partnership with
--------------------
-
-[JISC](http://www.jisc.ac.uk/)
-
-[Internet Archive](http://www.archive.org/)
 
 
 

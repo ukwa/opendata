@@ -14,9 +14,11 @@ In general, we can't provide remote bulk access to the primary datasets listed a
 We also make a few tools available, which illustrate how the open datasets might be used. These are also hosted on GitHub, and you should feel free to fork our repository or download our tools using the links provided. Pull requests containing new or improved tools are welcome!
 
 
+[Library of Congress Web Archive Data Sets](https://labs.loc.gov/experiments/webarchive-datasets/)
 
+(Common Crawl)[http://commoncrawl.org/]
 
-
+(HTTP Archive)[https://httparchive.org/]
 
 
 

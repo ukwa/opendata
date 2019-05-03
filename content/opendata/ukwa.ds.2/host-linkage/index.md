@@ -4,6 +4,7 @@ subtitle: JISC UK Web Domain Dataset (1996-2010)
 doi: 10.5259/ukwa.ds.2/host.linkage/1
 layout: dataset
 license: jia-cc0
+publisher: JISC and the Internet Archive
 outputs:
 - html
 - dcxml
