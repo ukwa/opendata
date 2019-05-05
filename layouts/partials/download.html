@@ -7,3 +7,12 @@
 </p>
 
 {{ end }}
+
+{{ if .Params.resources }}
+<h2>Download</h2>
+
+{{- range .Params.resources }}
+<div class="mb-2"><a class="btn btn-primary" href="{{ .Permalink }}{{ .path }}">Download as {{ .format | upper }}</a></div>
+{{- end }}
+
+{{ end }}

@@ -13,12 +13,7 @@
 
 {{ partial "sections" . }}
 
-{{ with .Content }}
-<h2>Detailed Description</h2>
-
-{{ . }}
-
-{{ end }}
+{{ .Content }}
 
 <footer class=" footline" >
 	{{with .Params.LastModifierDisplayName}}

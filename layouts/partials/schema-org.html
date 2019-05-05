@@ -3,7 +3,7 @@
 {{- end }}
 {{ if .Params.resources -}}
 <script type="application/ld+json">
-{{ $url := .URL -}}
+{{ $url := .Permalink -}}
 {
   "@context":"http://schema.org/",
   "@type":"Dataset",

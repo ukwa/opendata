@@ -37,9 +37,19 @@
     {{ end }}
 
     {{ block "body" . }}
+
     <div class="container-fluid">
       <div class="row pr-5 pl-5">
         <div class="col-12 blog-main">
+
+          {{ if not .IsHome }}
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white">
+              {{ template "breadcrumb" dict "currentPage" .Page "id" .File.UniqueID }}
+            </ol>
+          </nav>
+          <hr/>
+          {{ end }}
 
           {{ block "main" . }}
           {{ end }}
@@ -70,3 +80,16 @@
 
   </body>
 </html>
+
+{{ define "breadcrumb" }}
+  {{ if .currentPage.Parent }}
+    {{ template "breadcrumb" dict "currentPage" .currentPage.Parent }}
+  {{ end }}
+  {{ if eq .id .currentPage.File.UniqueID }}
+    <li class="breadcrumb-item active">{{ .currentPage.Title }}</li>
+  {{ else if .currentPage.IsHome }}
+    <li class="breadcrumb-item"><i>You are here:</i> <a href="{{ .currentPage.URL }}">Home</a></li>
+  {{ else }}
+    <li class="breadcrumb-item"><a href="{{ .currentPage.URL }}">{{ .currentPage.Title }}</a></li>
+  {{ end }}
+{{ end }}
