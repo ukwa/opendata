@@ -10,5 +10,5 @@ weight: 2
 Working with WARCs
 ------------------
 
+* [Playback of archived web pages](playback)
 * [Unpacking WARCs with Warcat](./warcs/unpacking-warcs-with-warcat.ipynb)
-
