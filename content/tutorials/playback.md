@@ -5,6 +5,24 @@ action: Go
 weight: 2
 ---
 
+<!-- MarkdownTOC autolink="true" -->
+
+- [Introduction](#introduction)
+- [Small Collections](#small-collections)
+	- [Upload to Webrecorder.io](#upload-to-webrecorderio)
+	- [Open using the Webrecorder Player](#open-using-the-webrecorder-player)
+- [Large Collections](#large-collections)
+	- [Big, sorted CDX file.](#big-sorted-cdx-file)
+	- [A CDX Server](#a-cdx-server)
+	- [Comparing these approaches](#comparing-these-approaches)
+- [Repository Integration](#repository-integration)
+
+<!-- /MarkdownTOC -->
+
+
+Introduction
+------------
+
 To play back archived resources, we need to be able to look content up by URL -- mapping 
 the requested URL to the WARC records that contain that content as seen at different times.
 This is usually done using three components:
