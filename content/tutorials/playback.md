@@ -34,9 +34,13 @@ If you want to access your WARCs locally, one option is to install the [Webrecor
 Large Collections
 -----------------
 
-The two main approaches people are using for large scale CDX indexes are:
+Here we describe the two main approaches used for large-scale CDX indexes.
 
-1. Big sorted CDX file. Generally constructed using OpenWayback or Pywb's cdx-indexer tools and GNU sort. The basic workflow would be:
+<small>Thanks to [Alex Osborne](https://twitter.com/atosborne) of the [National Library of Australia](https://www.nla.gov.au/) for providing most of this information.</small>
+
+### Big, sorted CDX file. 
+
+A large file, generally constructed using OpenWayback or Pywb's cdx-indexer tools and GNU sort. The basic workflow would be:
 
 ```bash
 # ensure sort order is not locale-sensitive
@@ -51,7 +55,11 @@ For large scale sorting ensure you give `sort` a large amount of RAM with `--buf
 
 Generally people using this option have some sort of scheme for doing incremental updates. Like a big master CDX file and one or more smaller ones they add to incrementally and then periodically merge into the big one.
 
-2. A "CDX server" which can incrementally be updated. OutbackCDX is my one, used I think currently by Australia, British Library and New Zealand. SolrWayback is another option. Finally Ilya mentioned recently that PyWb can use a Redis server for this purpose.
+### A CDX Server
+
+A "CDX server" which can incrementally be updated. OutbackCDX is my one, used I think currently by Australia, British Library and New Zealand. SolrWayback is another option. Finally Ilya mentioned recently that PyWb can use a Redis server for this purpose.
+
+### Comparing these approaches
 
 The tradeoffs:
 
@@ -60,14 +68,15 @@ The tradeoffs:
 * SolrWayback: saves you from maintaining separate Solr and CDX indexes. Although it sounds like in your case you aren't planning to do full text search so this option doesn't make that much sense.
 * Redis: off the shelf database tool, intended for datasets that fit inside memory, no compression (although you could possibly use an alternative implementation like LedisDB to gain some of those features)
 
-<small>Thanks to [Alex Osborne](https://twitter.com/atosborne) of the [National Library of Australia](https://www.nla.gov.au/) for providing most of the content of this section.</small>
-
 Repository Integration
 ----------------------
 
 If you need to integrate with your organisations storage facility, rather than using the local filesystem, you'll need to configure 
-your playback software to use an external resource locator service. TBC
+your playback software to use an external resource locator service.
 
 * HTTP Server supporting byte range requests
 * HttpFS
 * ...
+
+
+_TBC_
