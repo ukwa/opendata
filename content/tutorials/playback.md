@@ -60,6 +60,8 @@ The tradeoffs:
 * SolrWayback: saves you from maintaining separate Solr and CDX indexes. Although it sounds like in your case you aren't planning to do full text search so this option doesn't make that much sense.
 * Redis: off the shelf database tool, intended for datasets that fit inside memory, no compression (although you could possibly use an alternative implementation like LedisDB to gain some of those features)
 
+<small>Thanks to [Alex Osborne](https://twitter.com/atosborne) of the [National Library of Australia](https://www.nla.gov.au/) for providing most of the content of this section.</small>
+
 Repository Integration
 ----------------------
 
