@@ -38,7 +38,7 @@ The two main approaches people are using for large scale CDX indexes are:
 
 1. Big sorted CDX file. Generally constructed using OpenWayback or Pywb's cdx-indexer tools and GNU sort. The basic workflow would be:
 
-```
+```bash
 # ensure sort order is not locale-sensitive
 export LC_ALL=C
 cdx-indexer warc1.warc | sort > warc1.cdx
